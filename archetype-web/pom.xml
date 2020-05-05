@@ -13,28 +13,28 @@
 		<!--app-->
 		<dependency>
 			<groupId>com.liziczh</groupId>
-			<artifactId>rbac-api</artifactId>
+			<artifactId>archetype-api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.liziczh</groupId>
-			<artifactId>rbac-dao</artifactId>
+			<artifactId>archetype-dao</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.liziczh</groupId>
-			<artifactId>rbac-service</artifactId>
+			<artifactId>archetype-service</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.liziczh</groupId>
-			<artifactId>rbac-ref</artifactId>
+			<artifactId>archetype-ref</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.liziczh</groupId>
-			<artifactId>rbac-redis</artifactId>
+			<artifactId>archetype-redis</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-	</dependencies>
+    </dependencies>
 </project>
