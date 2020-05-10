@@ -10,7 +10,12 @@
 	<artifactId>archetype-dao</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
-		<!--app-->
+		<!--base-mybatis-->
+		<dependency>
+			<groupId>com.liziczh</groupId>
+			<artifactId>base-mybatis</artifactId>
+		</dependency>
+		<!--biz-->
 		<dependency>
 			<groupId>com.liziczh</groupId>
 			<artifactId>archetype-api</artifactId>
