@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration debug="false">
-	<property name="liziczh.logger" value="DEBUG" />
 
 	<!-- 控制台 -->
 	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
@@ -25,7 +24,7 @@
 
 	<logger name="org.mybatis" level="WARN" />
 
-	<logger name="com.liziczh" level="${liziczh.logger}" />
+	<logger name="com.liziczh" level="DEBUG" />
 	<logger name="org.mybatis.caches.memcached" level="WARN" />
 	<logger name="org.apache.kafka" level="WARN" />
 </configuration>
