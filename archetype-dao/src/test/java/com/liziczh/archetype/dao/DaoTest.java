@@ -14,7 +14,7 @@ import com.liziczh.archetype.api.entity.TDemo;
 import com.liziczh.archetype.dao.mapper.TDemoMapper;
 
 @RunWith(SpringRunner.class)
-@SpringJUnitConfig(classes = DaoTest.class)
+@SpringJUnitConfig(classes = DaoApplication.class)
 @SpringBootTest
 @ActiveProfiles("test")
 public class DaoTest {

@@ -1,6 +1,6 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     filters: stat
     initialSize: 1
     maxActive: 20
@@ -16,6 +16,8 @@ spring:
     timeBetweenEvictionRunsMillis: 60000
     type: com.alibaba.druid.pool.DruidDataSource
     validationQuery: select 'x'
+mybatis:
+  config-location: classpath:mybatis-config.xml
 logging:
   file:
     path: logback-spring.xml
