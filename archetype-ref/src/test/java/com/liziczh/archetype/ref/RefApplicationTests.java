@@ -1,10 +1,10 @@
-package com.liziczh.archetype.redis;
+package com.liziczh.archetype.ref;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ArchetypeRedisApplicationTests {
+class RefApplicationTests {
 	@Test
 	void contextLoads() {
 	}
