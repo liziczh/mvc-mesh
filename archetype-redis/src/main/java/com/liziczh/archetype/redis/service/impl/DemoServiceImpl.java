@@ -1,5 +1,6 @@
 package com.liziczh.archetype.redis.service.impl;
 
+import java.io.Serializable;
 import java.util.concurrent.TimeUnit;
 
 import javax.annotation.Resource;
@@ -15,7 +16,7 @@ public class DemoServiceImpl implements DemoRedisService {
 	@Resource(name = "redisCustomStringTemplate")
 	private StringRedisTemplate stringRedisTemplate;
 	@Resource(name = "redisCustomTemplate")
-	private RedisTemplate redisTemplate;
+	private RedisTemplate<String, Serializable> redisTemplate;
 
 	@Override
 	public void setValue(String key, String value) {
