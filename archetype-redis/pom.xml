@@ -17,10 +17,10 @@
 			<artifactId>archetype-api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-        <!--base-->
+		<!--spring-redis-->
 		<dependency>
-			<groupId>com.liziczh</groupId>
-			<artifactId>base-redis</artifactId>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
     </dependencies>
 </project>
