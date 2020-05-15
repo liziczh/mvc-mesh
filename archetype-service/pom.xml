@@ -11,7 +11,22 @@
 	<artifactId>archetype-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
-		<!--app-->
+		<!--aop-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+		<!--log-->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		<!--base-jackson-->
+		<dependency>
+			<groupId>com.liziczh</groupId>
+			<artifactId>base-jackson</artifactId>
+		</dependency>
+		<!--biz-->
 		<dependency>
 			<groupId>com.liziczh</groupId>
 			<artifactId>archetype-api</artifactId>
@@ -25,11 +40,6 @@
 		<dependency>
 			<groupId>com.liziczh</groupId>
 			<artifactId>archetype-redis</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>com.liziczh</groupId>
-			<artifactId>archetype-ref</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>

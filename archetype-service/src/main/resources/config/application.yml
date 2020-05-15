@@ -1,1 +1,7 @@
-
+logging:
+  file:
+    path: logback-spring.xml
+spring:
+  kafka:
+    producer:
+      client-Id: archeType

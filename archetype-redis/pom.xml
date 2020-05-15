@@ -11,7 +11,7 @@
 	<artifactId>archetype-redis</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
-		<!--app-->
+		<!--biz-->
 		<dependency>
 			<groupId>com.liziczh</groupId>
 			<artifactId>archetype-api</artifactId>
