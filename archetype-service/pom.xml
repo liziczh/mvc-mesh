@@ -26,6 +26,10 @@
 			<groupId>com.liziczh</groupId>
 			<artifactId>base-jackson</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.liziczh</groupId>
+			<artifactId>base-aop</artifactId>
+		</dependency>
 		<!--biz-->
 		<dependency>
 			<groupId>com.liziczh</groupId>

@@ -11,6 +11,9 @@ import org.springframework.stereotype.Service;
 
 import com.liziczh.archetype.redis.service.DemoRedisService;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Service
 public class DemoRedisServiceImpl implements DemoRedisService {
 	@Resource(name = "redisCustomStringTemplate")

@@ -8,6 +8,9 @@ import com.liziczh.archetype.api.service.DemoService;
 import com.liziczh.archetype.dao.mapper.TDemoMapper;
 import com.liziczh.archetype.redis.service.DemoRedisService;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Service
 public class DemoServiceImpl implements DemoService {
 	@Autowired
