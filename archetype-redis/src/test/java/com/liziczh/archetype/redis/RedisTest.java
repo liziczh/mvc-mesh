@@ -12,6 +12,7 @@ import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.liziczh.archetype.redis.service.DemoRedisService;
+import com.liziczh.archetype.redis.service.impl.DemoRedisServiceImpl;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringJUnitConfig(classes = RedisApplication.class)

@@ -9,5 +9,11 @@ public interface DemoService {
 	 * @return TDemo
 	 * @throws Exception 异常
 	 */
-	public TDemo getDemo(Integer id) throws Exception;
+	TDemo getDemo(Integer id) throws Exception;
+	/**
+	 * 缓存Demo
+	 * @param key key
+	 * @param value value
+	 */
+	void setDemoRedisValue(String key, String value);
 }

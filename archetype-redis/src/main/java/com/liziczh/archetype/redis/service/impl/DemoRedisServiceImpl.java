@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 import com.liziczh.archetype.redis.service.DemoRedisService;
 
 @Service
-public class DemoServiceImpl implements DemoRedisService {
+public class DemoRedisServiceImpl implements DemoRedisService {
 	@Resource(name = "redisCustomStringTemplate")
 	private StringRedisTemplate stringRedisTemplate;
 	@Resource(name = "redisCustomTemplate")
