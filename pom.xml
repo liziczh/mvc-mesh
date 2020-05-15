@@ -19,6 +19,5 @@
 		<module>archetype-web</module>
 		<module>archetype-mgm</module>
 		<module>archetype-redis</module>
-		<module>archetype-ref</module>
 	</modules>
 </project>
