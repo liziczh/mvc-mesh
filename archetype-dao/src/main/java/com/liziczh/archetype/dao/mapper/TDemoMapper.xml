@@ -58,5 +58,5 @@
 		delete from T_DEMO where ID = #{id,jdbcType=BIGINT}
 	</delete>
     <!--MybatisRedis缓存-->
-    <cache type="com.liziczh.base.mybatis.cache.MybatisRedisCache" />
+    <cache type="com.liziczh.archetype.dao.cache.MybatisRedisCache" />
 </mapper>
