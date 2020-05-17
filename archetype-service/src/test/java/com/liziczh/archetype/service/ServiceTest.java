@@ -26,7 +26,7 @@ public class ServiceTest {
 	@Test
 	public void demoServiceTest() {
 		try {
-			demoService.getDemo(1);
+			demoService.getDemo(String.valueOf(1));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

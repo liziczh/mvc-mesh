@@ -11,19 +11,20 @@
 	<artifactId>archetype-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
-		<!--log-->
+		<!--aop-->
 		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
+			<groupId>com.liziczh</groupId>
+			<artifactId>base-aop</artifactId>
 		</dependency>
 		<!--base-jackson-->
 		<dependency>
 			<groupId>com.liziczh</groupId>
 			<artifactId>base-jackson</artifactId>
 		</dependency>
+		<!--log-->
 		<dependency>
-			<groupId>com.liziczh</groupId>
-			<artifactId>base-aop</artifactId>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
 		</dependency>
 		<!--biz-->
 		<dependency>

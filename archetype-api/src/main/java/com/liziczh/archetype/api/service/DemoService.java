@@ -9,7 +9,7 @@ public interface DemoService {
 	 * @return TDemo
 	 * @throws Exception 异常
 	 */
-	TDemo getDemo(Integer id) throws Exception;
+	TDemo getDemo(String id) throws Exception;
 	/**
 	 * 缓存Demo
 	 * @param key key

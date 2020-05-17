@@ -19,8 +19,8 @@ public class DemoServiceImpl implements DemoService {
 	private DemoRedisService demoRedisService;
 
 	@Override
-	public TDemo getDemo(Integer id) throws Exception {
-		return demoMapper.get(id);
+	public TDemo getDemo(String id) throws Exception {
+		return demoMapper.get(Integer.valueOf(id));
 	}
 	@Override
 	public void setDemoRedisValue(String key, String value) {
