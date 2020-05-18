@@ -1,8 +1,8 @@
 package com.liziczh.archetype.api.common;
 
 public class Constants {
-	public static final String SYS_CODE = "app-rbac";
-
+	public static final String SYS_CODE = "archetype";
+	public static final String SYS_USER = "archetype";
 	/**
 	 * 通用状态
 	 */

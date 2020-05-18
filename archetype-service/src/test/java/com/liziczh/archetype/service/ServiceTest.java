@@ -10,7 +10,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.liziczh.archetype.api.service.DemoService;
 import com.liziczh.archetype.dao.DaoApplication;
-import com.liziczh.archetype.redis.service.DemoRedisService;
 
 import lombok.extern.slf4j.Slf4j;
 

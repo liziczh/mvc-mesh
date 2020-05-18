@@ -18,11 +18,11 @@
 		<!--base-->
 		<dependency>
 			<groupId>com.liziczh</groupId>
-			<artifactId>base-swagger</artifactId>
+			<artifactId>base-mvc</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.liziczh</groupId>
-			<artifactId>base-mvc</artifactId>
+			<artifactId>base-swagger</artifactId>
 		</dependency>
 		<!--biz-->
 		<dependency>

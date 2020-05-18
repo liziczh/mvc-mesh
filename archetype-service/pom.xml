@@ -11,12 +11,11 @@
 	<artifactId>archetype-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
-		<!--aop-->
+		<!--base-->
 		<dependency>
 			<groupId>com.liziczh</groupId>
 			<artifactId>base-aop</artifactId>
 		</dependency>
-		<!--base-jackson-->
 		<dependency>
 			<groupId>com.liziczh</groupId>
 			<artifactId>base-jackson</artifactId>
