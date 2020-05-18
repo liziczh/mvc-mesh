@@ -14,11 +14,7 @@
 		<!--base-->
 		<dependency>
 			<groupId>com.liziczh</groupId>
-			<artifactId>base-aop</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.liziczh</groupId>
-			<artifactId>base-jackson</artifactId>
+			<artifactId>base-service</artifactId>
 		</dependency>
 		<!--log-->
 		<dependency>

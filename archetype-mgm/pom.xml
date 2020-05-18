@@ -15,15 +15,15 @@
 		<!--base-->
 		<dependency>
 			<groupId>com.liziczh</groupId>
-			<artifactId>base-mvc</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.liziczh</groupId>
 			<artifactId>base-swagger</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.liziczh</groupId>
-			<artifactId>base-aop</artifactId>
+			<artifactId>base-mvc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.liziczh</groupId>
+			<artifactId>base-service</artifactId>
 		</dependency>
 		<!--biz-->
 		<dependency>
