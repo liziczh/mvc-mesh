@@ -87,19 +87,10 @@
 ##### service
 
 ```xml
-<!--log-->
-<dependency>
-	<groupId>org.slf4j</groupId>
-	<artifactId>slf4j-api</artifactId>
-</dependency>
-<!--base-jackson-->
+<!--base-->
 <dependency>
 	<groupId>com.liziczh</groupId>
-	<artifactId>base-jackson</artifactId>
-</dependency>
-<dependency>
-	<groupId>com.liziczh</groupId>
-	<artifactId>base-aop</artifactId>
+	<artifactId>base-service</artifactId>
 </dependency>
 <!--biz-->
 <dependency>
@@ -121,12 +112,69 @@
 
 ##### web
 
-```
-
+```XML
+<!--base-->
+<dependency>
+	<groupId>com.liziczh</groupId>
+	<artifactId>base-mvc</artifactId>
+</dependency>
+<dependency>
+	<groupId>com.liziczh</groupId>
+	<artifactId>base-swagger</artifactId>
+</dependency>
+<!--biz-->
+<dependency>
+	<groupId>com.liziczh</groupId>
+	<artifactId>archetype-api</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+</dependency>
+<dependency>
+	<groupId>com.liziczh</groupId>
+	<artifactId>archetype-dao</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+</dependency>
+<dependency>
+	<groupId>com.liziczh</groupId>
+	<artifactId>archetype-service</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+</dependency>
+<dependency>
+	<groupId>com.liziczh</groupId>
+	<artifactId>archetype-redis</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+</dependency>
 ```
 
 ##### mgm
 
-```
-
+```xml
+<!--base-->
+<dependency>
+	<groupId>com.liziczh</groupId>
+	<artifactId>base-swagger</artifactId>
+</dependency>
+<dependency>
+	<groupId>com.liziczh</groupId>
+	<artifactId>base-mvc</artifactId>
+</dependency>
+<dependency>
+	<groupId>com.liziczh</groupId>
+	<artifactId>base-service</artifactId>
+</dependency>
+<!--biz-->
+<dependency>
+	<groupId>com.liziczh</groupId>
+	<artifactId>archetype-api</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+</dependency>
+<dependency>
+	<groupId>com.liziczh</groupId>
+	<artifactId>archetype-dao</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+</dependency>
+<dependency>
+	<groupId>com.liziczh</groupId>
+	<artifactId>archetype-redis</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+</dependency>
 ```
