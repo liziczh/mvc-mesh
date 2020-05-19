@@ -1,4 +1,4 @@
-package com.liziczh.archetype.web.aop;
+package com.liziczh.archetype.mgm.aop;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;

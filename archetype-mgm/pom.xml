@@ -15,15 +15,16 @@
 		<!--base-->
 		<dependency>
 			<groupId>com.liziczh</groupId>
-			<artifactId>base-swagger</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.liziczh</groupId>
 			<artifactId>base-mvc</artifactId>
 		</dependency>
+		<!--swagger-->
 		<dependency>
-			<groupId>com.liziczh</groupId>
-			<artifactId>base-service</artifactId>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
 		</dependency>
 		<!--biz-->
 		<dependency>
