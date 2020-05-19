@@ -21,14 +21,19 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-aop</artifactId>
 		</dependency>
+		<!--swagger-->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+		</dependency>
 		<!--base-->
 		<dependency>
 			<groupId>com.liziczh</groupId>
 			<artifactId>base-mvc</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.liziczh</groupId>
-			<artifactId>base-swagger</artifactId>
 		</dependency>
 		<!--biz-->
 		<dependency>
