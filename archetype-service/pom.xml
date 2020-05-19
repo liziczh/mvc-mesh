@@ -32,5 +32,10 @@
 			<artifactId>archetype-redis</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>com.liziczh</groupId>
+			<artifactId>archetype-ref</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>
