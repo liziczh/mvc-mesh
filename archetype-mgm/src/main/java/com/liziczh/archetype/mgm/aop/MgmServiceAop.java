@@ -5,7 +5,7 @@ import java.util.Date;
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;
 
-import com.liziczh.base.service.aop.BaseServiceAop;
+import com.liziczh.base.common.aop.BaseServiceAop;
 
 @Component
 @Aspect
