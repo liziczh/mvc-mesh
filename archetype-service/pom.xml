@@ -11,10 +11,10 @@
 	<artifactId>archetype-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
-		<!--base-->
+		<!--aop-->
 		<dependency>
-			<groupId>com.liziczh</groupId>
-			<artifactId>base-service</artifactId>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
 		</dependency>
 		<!--biz-->
 		<dependency>
