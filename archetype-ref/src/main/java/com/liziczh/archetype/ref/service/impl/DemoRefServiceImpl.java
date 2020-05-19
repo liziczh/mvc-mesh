@@ -7,7 +7,7 @@ import org.springframework.web.client.RestTemplate;
 
 import com.liziczh.archetype.ref.config.RefContextHelper;
 import com.liziczh.archetype.ref.service.DemoRefService;
-import com.liziczh.base.jackson.util.JacksonUtils;
+import com.liziczh.common.jackson.util.JacksonUtils;
 
 import lombok.extern.slf4j.Slf4j;
 
