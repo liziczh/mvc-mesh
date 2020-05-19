@@ -3,8 +3,8 @@
 
 - api
 - redis
-- kafka
 - ref
+- kafka
 - dao
 - service
 - web
@@ -36,12 +36,6 @@
 </dependency>
 ```
 
-##### kafka
-
-```
-
-```
-
 ##### ref
 
 ```xml
@@ -56,6 +50,12 @@
 	<artifactId>archetype-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 </dependency>
+```
+
+##### kafka
+
+```
+
 ```
 
 ##### dao
@@ -128,14 +128,19 @@
 ##### web
 
 ```XML
+<!--swagger-->
+<dependency>
+	<groupId>io.springfox</groupId>
+	<artifactId>springfox-swagger2</artifactId>
+</dependency>
+<dependency>
+	<groupId>io.springfox</groupId>
+	<artifactId>springfox-swagger-ui</artifactId>
+</dependency>
 <!--base-->
 <dependency>
 	<groupId>com.liziczh</groupId>
 	<artifactId>base-mvc</artifactId>
-</dependency>
-<dependency>
-	<groupId>com.liziczh</groupId>
-	<artifactId>base-swagger</artifactId>
 </dependency>
 <!--biz-->
 <dependency>
