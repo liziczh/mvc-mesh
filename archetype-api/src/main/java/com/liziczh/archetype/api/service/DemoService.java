@@ -52,10 +52,9 @@ public interface DemoService {
 	 * @param key key
 	 */
 	void delDemoKey(String key);
-
 	/**
 	 * REF测试
 	 * @return helloworld
 	 */
-	String hello();
+	String refHello();
 }

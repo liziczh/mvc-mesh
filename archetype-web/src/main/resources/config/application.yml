@@ -6,7 +6,7 @@ spring:
     name: archtype-web
   profiles:
     active: ${env}
-    include: web-${env},impl-${env},mybatis-${env},ref-${env},redis-${env}
+    include: web-${env},service-${env},dao-${env},ref-${env},redis-${env}
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8

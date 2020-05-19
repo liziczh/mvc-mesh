@@ -54,7 +54,7 @@ public class DemoServiceImpl implements DemoService {
 		demoRedisService.delKey(key);
 	}
 	@Override
-	public String hello() {
+	public String refHello() {
 		return demoRefService.hello();
 	}
 }
