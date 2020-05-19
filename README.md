@@ -23,16 +23,16 @@
 ##### redis
 
 ```xml
+<!--spring-redis-->
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-data-redis</artifactId>
+</dependency>
 <!--biz-->
 <dependency>
 	<groupId>com.liziczh</groupId>
 	<artifactId>archetype-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-</dependency>
-<!--spring-redis-->
-<dependency>
-	<groupId>org.springframework.boot</groupId>
-	<artifactId>spring-boot-starter-data-redis</artifactId>
 </dependency>
 ```
 
@@ -44,8 +44,18 @@
 
 ##### ref
 
-```
-
+```xml
+<!--web-->
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+<!--biz-->
+<dependency>
+	<groupId>com.liziczh</groupId>
+	<artifactId>archetype-api</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+</dependency>
 ```
 
 ##### dao
@@ -108,6 +118,11 @@
 	<artifactId>archetype-redis</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 </dependency>
+<dependency>
+	<groupId>com.liziczh</groupId>
+	<artifactId>archetype-ref</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+</dependency>
 ```
 
 ##### web
@@ -125,22 +140,7 @@
 <!--biz-->
 <dependency>
 	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-</dependency>
-<dependency>
-	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-dao</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-</dependency>
-<dependency>
-	<groupId>com.liziczh</groupId>
 	<artifactId>archetype-service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-</dependency>
-<dependency>
-	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-redis</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 </dependency>
 ```
@@ -175,6 +175,11 @@
 <dependency>
 	<groupId>com.liziczh</groupId>
 	<artifactId>archetype-redis</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+</dependency>
+<dependency>
+	<groupId>com.liziczh</groupId>
+	<artifactId>archetype-ref</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 </dependency>
 ```
