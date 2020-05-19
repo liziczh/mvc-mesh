@@ -1,4 +1,4 @@
-package com.liziczh.archetype.web;
+package com.liziczh.archetype.ref;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,15 +7,12 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.liziczh.archetype.dao.DaoApplication;
-import com.liziczh.archetype.service.ServiceApplication;
-
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringJUnitConfig(classes = { DaoApplication.class, ServiceApplication.class, WebApplication.class })
-@SpringBootTest()
+@SpringJUnitConfig(classes = RefApplication.class)
+@SpringBootTest
 @ActiveProfiles("test")
-public class WebTest {
+class RefTest {
 	@Test
-	public void webTest() {
+	void contextLoads() {
 	}
 }
