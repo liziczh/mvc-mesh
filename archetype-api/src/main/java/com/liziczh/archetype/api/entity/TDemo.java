@@ -8,7 +8,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 @Data
-@EqualsAndHashCode(callSuper = false)
 public class TDemo extends BaseEntity {
 	private static final long serialVersionUID = -3399850105386695874L;
 	private Integer id;
