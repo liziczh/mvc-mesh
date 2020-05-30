@@ -5,8 +5,7 @@ spring:
   application:
     name: archetype-mgm
   profiles:
-    active: ${env}
-    include: dao-${env},redis-${env},ref-${env},mgm-${env}
+    include: dao-${spring.profiles.active},redis-${spring.profiles.active},ref-${spring.profiles.active},mgm-${spring.profiles.active}
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8

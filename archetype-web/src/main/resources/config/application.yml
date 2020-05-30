@@ -5,8 +5,7 @@ spring:
   application:
     name: archtype-web
   profiles:
-    active: ${env}
-    include: web-${env},service-${env},dao-${env},ref-${env},redis-${env}
+    include: web-${spring.profiles.active},service-${spring.profiles.active},dao-${spring.profiles.active},ref-${spring.profiles.active},redis-${spring.profiles.active}
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
