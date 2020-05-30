@@ -1,8 +1,17 @@
 package com.liziczh.archetype.api.service;
 
+import java.util.List;
+
+import com.github.pagehelper.PageInfo;
 import com.liziczh.archetype.api.entity.TDemo;
 
 public interface DemoService {
+	/**
+	 * 查询全部Demo
+	 * @return TDemo
+	 * @throws Exception 异常
+	 */
+	List<TDemo> getAll() throws Exception;
 	/**
 	 * 新增实体
 	 * @param demo 实体

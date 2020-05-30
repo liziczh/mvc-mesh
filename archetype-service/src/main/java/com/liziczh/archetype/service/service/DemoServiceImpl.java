@@ -1,8 +1,12 @@
 package com.liziczh.archetype.service.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.liziczh.archetype.api.entity.TDemo;
 import com.liziczh.archetype.api.service.DemoService;
 import com.liziczh.archetype.dao.mapper.TDemoMapper;
@@ -21,6 +25,10 @@ public class DemoServiceImpl implements DemoService {
 	@Autowired
 	private DemoRefService demoRefService;
 
+	@Override
+	public List<TDemo> getAll() throws Exception {
+		return demoMapper.getAll();
+	}
 	@Override
 	public Integer addDemo(TDemo demo) {
 		return demoMapper.insert(demo);
