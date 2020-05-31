@@ -8,5 +8,5 @@ public interface MailService {
 	 * @param content
 	 * @throws Exception
 	 */
-	public void sendHTMLMail(String to, String subject, String content) throws Exception;
+	void sendHTMLMail(String to, String subject, String content) throws Exception;
 }

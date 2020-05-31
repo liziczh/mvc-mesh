@@ -1,4 +1,4 @@
-package com.liziczh.archetype.service.service;
+package com.liziczh.archetype.service.service.impl;
 
 import java.util.List;
 

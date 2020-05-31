@@ -14,6 +14,24 @@
     <sql id="Base_Column" >
         ID, CREATE_TIME, CREATE_USER, UPDATE_TIME, UPDATE_USER, PERMIT_ROLE, VALID
     </sql>
+    <!-- 条件查询 -->
+    <select id="selectByCondition" parameterType="com.liziczh.archetype.api.condition.DemoCondition" resultType="list" resultMap="TDemoMap">
+        SELECT * FROM T_DEMO
+        <where>
+            <if test="name != null">
+                NAME LIKE #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="startTime != null">
+                CREATE_TIME &gt; #{startTime,jdbcType=TIMESTAMP}
+            </if>
+            <if test="endTime != null">
+                CREATE_TIME &lt; #{endTime,jdbcType=TIMESTAMP}
+            </if>
+            <if test="valid != null">
+                VALID = #{valid,jdbcType=VARCHAR},
+            </if>
+        </where>
+    </select>
     <!-- 查询全部数据 -->
     <select id="getAll" resultType="list" resultMap="TDemoMap">
         SELECT * FROM T_DEMO

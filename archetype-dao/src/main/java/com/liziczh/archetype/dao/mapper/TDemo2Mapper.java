@@ -1,5 +1,7 @@
 package com.liziczh.archetype.dao.mapper;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
@@ -8,12 +10,34 @@ import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 
+import com.liziczh.archetype.api.condition.DemoCondition;
 import com.liziczh.archetype.api.entity.TDemo;
 import com.liziczh.base.common.repository.BaseRepository;
 
 @Repository
 @Mapper
-public interface TDemo2Mapper extends BaseRepository<TDemo, Integer> {
+public interface TDemo2Mapper extends BaseRepository<TDemo, Integer, DemoCondition> {
+	@Override
+	@Select(" <script>SELECT * FROM T_DEMO\n"
+			+ "        <where>\n"
+			+ "            <if test=\"name != null\">\n"
+			+ "                NAME LIKE #{name,jdbcType=VARCHAR},\n"
+			+ "            </if>\n"
+			+ "            <if test=\"startTime != null\">\n"
+			+ "                CREATE_TIME &gt; #{startTime,jdbcType=TIMESTAMP}\n"
+			+ "            </if>\n"
+			+ "            <if test=\"endTime != null\">\n"
+			+ "                CREATE_TIME &lt; #{endTime,jdbcType=TIMESTAMP}\n"
+			+ "            </if>\n"
+			+ "            <if test=\"valid != null\">\n"
+			+ "                VALID = #{valid,jdbcType=VARCHAR},\n"
+			+ "            </if>\n"
+			+ "        </where>"
+			+ "</script>")
+	List<TDemo> selectByCondition(DemoCondition condition);
+	@Override
+	@Select("SELECT * FROM T_DEMO")
+	List<TDemo> getAll();
 	@Override
 	@Select("SELECT * FROM T_DEMO WHERE ID = #{id}")
 	TDemo get(@Param("id") Integer id);
