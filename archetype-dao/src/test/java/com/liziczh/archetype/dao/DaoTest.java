@@ -10,6 +10,7 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import com.liziczh.archetype.api.common.Constants;
 import com.liziczh.archetype.api.entity.TDemo;
 import com.liziczh.archetype.dao.mapper.TDemoMapper;
 
@@ -20,13 +21,17 @@ import com.liziczh.archetype.dao.mapper.TDemoMapper;
 public class DaoTest {
 	@Autowired
 	private TDemoMapper demoMapper;
-
+	@Test
+	public void getAll() {
+		demoMapper.getAll();
+	}
 	@Test
 	public void insertDemoTest() {
 		TDemo entity = new TDemo();
 		entity.setName("liziczh");
 		entity.setCreateTime(new Date());
 		entity.setCreateUser("lizi");
+		entity.setValid(Constants.COMMON_STATUS.VALID.getCode());
 		demoMapper.insert(entity);
 	}
 	@Test

@@ -5,8 +5,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
 import com.liziczh.archetype.api.entity.TDemo;
 import com.liziczh.archetype.api.service.DemoService;
 import com.liziczh.archetype.dao.mapper.TDemoMapper;
@@ -26,7 +24,7 @@ public class DemoServiceImpl implements DemoService {
 	private DemoRefService demoRefService;
 
 	@Override
-	public List<TDemo> getAll() throws Exception {
+	public List<TDemo> getAll() {
 		return demoMapper.getAll();
 	}
 	@Override

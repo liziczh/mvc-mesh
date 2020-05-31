@@ -14,7 +14,7 @@
     <sql id="Base_Column" >
         ID, CREATE_TIME, CREATE_USER, UPDATE_TIME, UPDATE_USER, PERMIT_ROLE, VALID
     </sql>
-    <!-- 查询所有数据 -->
+    <!-- 查询全部数据 -->
     <select id="getAll" resultType="list" resultMap="TDemoMap">
         SELECT * FROM T_DEMO
     </select>

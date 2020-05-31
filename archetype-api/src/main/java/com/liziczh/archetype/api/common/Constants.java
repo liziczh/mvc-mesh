@@ -7,17 +7,17 @@ public class Constants {
 	 * 通用状态
 	 */
 	public static enum COMMON_STATUS {
-		VALID(0, "正常"),
-		INVALID(1, "失效");
+		VALID("0", "正常"),
+		INVALID("1", "失效");
 
-		private Integer code;
+		private String code;
 		private String name;
 
-		private COMMON_STATUS(Integer code, String name) {
+		private COMMON_STATUS(String code, String name) {
 			this.code = code;
 			this.name = name;
 		}
-		public Integer getCode() {
+		public String getCode() {
 			return code;
 		}
 		public String getName() {
