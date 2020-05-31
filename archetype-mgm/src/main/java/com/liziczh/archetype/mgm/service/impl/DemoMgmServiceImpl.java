@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.liziczh.archetype.api.common.Constants;
+import com.liziczh.archetype.api.condition.DemoCondition;
 import com.liziczh.archetype.api.entity.TDemo;
 import com.liziczh.archetype.dao.mapper.TDemoMapper;
 import com.liziczh.archetype.mgm.service.DemoMgmService;
@@ -15,6 +16,11 @@ import com.liziczh.archetype.mgm.service.DemoMgmService;
 public class DemoMgmServiceImpl implements DemoMgmService {
 	@Autowired
 	private TDemoMapper demoMapper;
+
+	@Override
+	public List<TDemo> selectByCondition(DemoCondition condition) {
+		return demoMapper.selectByCondition(condition);
+	}
 	@Override
 	public List<TDemo> getAll() {
 		return demoMapper.getAll();

@@ -2,11 +2,19 @@ package com.liziczh.archetype.api.service;
 
 import java.util.List;
 
+import com.liziczh.archetype.api.condition.DemoCondition;
 import com.liziczh.archetype.api.entity.TDemo;
+import com.liziczh.base.common.service.BaseService;
 
-public interface DemoService {
+public interface DemoService extends BaseService {
 	/**
-	 * 查询全部Demo
+	 * 条件查询
+	 * @return TDemo
+	 * @throws Exception 异常
+	 */
+	List<TDemo> selectByCondition(DemoCondition condition) throws Exception;
+	/**
+	 * 查询全部
 	 * @return TDemo
 	 * @throws Exception 异常
 	 */
@@ -25,26 +33,26 @@ public interface DemoService {
 	 */
 	void updateDemo(TDemo demo) throws Exception;
 	/**
-	 * 获取Demo
+	 * 查询单个实体
 	 * @param id id
 	 * @return TDemo
 	 * @throws Exception 异常
 	 */
 	TDemo getDemo(String id) throws Exception;
 	/**
-	 * 删除Demo
+	 * 删除实体
 	 * @param id id
 	 * @throws Exception 异常
 	 */
 	void deleteDemo(String id) throws Exception;
 	/**
-	 * 缓存Demo
+	 * 缓存
 	 * @param key key
 	 * @param value value
 	 */
 	void setDemoRedisValue(String key, String value);
 	/**
-	 * 获取缓存值
+	 * 查询缓存值
 	 * @param key K
 	 * @return V
 	 */
