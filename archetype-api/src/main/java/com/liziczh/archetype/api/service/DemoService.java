@@ -2,7 +2,6 @@ package com.liziczh.archetype.api.service;
 
 import java.util.List;
 
-import com.github.pagehelper.PageInfo;
 import com.liziczh.archetype.api.entity.TDemo;
 
 public interface DemoService {

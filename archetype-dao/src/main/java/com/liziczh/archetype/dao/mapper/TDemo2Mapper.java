@@ -18,20 +18,20 @@ import com.liziczh.base.common.repository.BaseRepository;
 @Mapper
 public interface TDemo2Mapper extends BaseRepository<TDemo, Integer, DemoCondition> {
 	@Override
-	@Select(" <script>SELECT * FROM T_DEMO\n"
-			+ "        <where>\n"
-			+ "            <if test=\"name != null\">\n"
-			+ "                NAME LIKE #{name,jdbcType=VARCHAR},\n"
-			+ "            </if>\n"
+	@Select("<script>SELECT * FROM T_DEMO"
+			+ "        <where>"
+			+ "            <if test=\"name != null\">"
+			+ "                NAME LIKE #{name,jdbcType=VARCHAR},"
+			+ "            </if>"
 			+ "            <if test=\"startTime != null\">\n"
-			+ "                CREATE_TIME &gt; #{startTime,jdbcType=TIMESTAMP}\n"
-			+ "            </if>\n"
+			+ "                CREATE_TIME &gt; #{startTime,jdbcType=TIMESTAMP}"
+			+ "            </if>"
 			+ "            <if test=\"endTime != null\">\n"
-			+ "                CREATE_TIME &lt; #{endTime,jdbcType=TIMESTAMP}\n"
+			+ "                CREATE_TIME &lt; #{endTime,jdbcType=TIMESTAMP}"
 			+ "            </if>\n"
-			+ "            <if test=\"valid != null\">\n"
-			+ "                VALID = #{valid,jdbcType=VARCHAR},\n"
-			+ "            </if>\n"
+			+ "            <if test=\"valid != null\">"
+			+ "                VALID = #{valid,jdbcType=VARCHAR}"
+			+ "            </if>"
 			+ "        </where>"
 			+ "</script>")
 	List<TDemo> selectByCondition(DemoCondition condition);

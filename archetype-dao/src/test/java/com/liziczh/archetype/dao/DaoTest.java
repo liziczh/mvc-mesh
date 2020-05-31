@@ -11,6 +11,7 @@ import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.liziczh.archetype.api.common.Constants;
+import com.liziczh.archetype.api.condition.DemoCondition;
 import com.liziczh.archetype.api.entity.TDemo;
 import com.liziczh.archetype.dao.mapper.TDemoMapper;
 
@@ -22,7 +23,13 @@ public class DaoTest {
 	@Autowired
 	private TDemoMapper demoMapper;
 	@Test
-	public void getAll() {
+	public void selectByConditionTest() {
+		DemoCondition condition = new DemoCondition();
+		condition.setValid(Constants.COMMON_STATUS.VALID.getCode());
+		demoMapper.selectByCondition(condition);
+	}
+	@Test
+	public void getAllTest() {
 		demoMapper.getAll();
 	}
 	@Test

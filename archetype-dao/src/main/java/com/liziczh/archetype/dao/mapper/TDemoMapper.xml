@@ -28,7 +28,7 @@
                 CREATE_TIME &lt; #{endTime,jdbcType=TIMESTAMP}
             </if>
             <if test="valid != null">
-                VALID = #{valid,jdbcType=VARCHAR},
+                VALID = #{valid,jdbcType=VARCHAR}
             </if>
         </where>
     </select>
