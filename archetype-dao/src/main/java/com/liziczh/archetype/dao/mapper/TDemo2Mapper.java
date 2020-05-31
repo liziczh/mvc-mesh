@@ -33,7 +33,7 @@ public interface TDemo2Mapper extends BaseRepository<TDemo, Integer, DemoConditi
 			+ "                VALID = #{valid,jdbcType=VARCHAR}"
 			+ "            </if>"
 			+ "        </where>"
-			+ "</script>")
+			+ "ORDER BY CREATE_TIME DESC</script>")
 	List<TDemo> selectByCondition(DemoCondition condition);
 	@Override
 	@Select("SELECT * FROM T_DEMO")
