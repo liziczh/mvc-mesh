@@ -31,7 +31,9 @@
                 VALID = #{valid,jdbcType=VARCHAR}
             </if>
         </where>
-        ORDER BY CREATE_TIME DESC
+        <if test="sortCondition.cloName != null">
+            ORDER BY ${sortCondition.cloName,jdbcType=VARCHAR} ${sortCondition.orderType,jdbcType=VARCHAR}
+        </if>
     </select>
     <!-- 查询全部数据 -->
     <select id="getAll" resultType="list" resultMap="TDemoMap">

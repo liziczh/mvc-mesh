@@ -29,6 +29,7 @@ public class DemoMgmServiceImpl implements DemoMgmService {
 	public void addItem(TDemo entity) {
 		entity.setCreateTime(new Date());
 		entity.setCreateUser(Constants.SYS_USER);
+		entity.setValid(Constants.COMMON_STATUS.VALID.getCode());
 		demoMapper.insert(entity);
 	}
 	@Override
