@@ -32,7 +32,7 @@
             </if>
         </where>
         <if test="sortCondition.cloName != null">
-            ORDER BY ${sortCondition.cloName,jdbcType=VARCHAR} ${sortCondition.orderType,jdbcType=VARCHAR}
+            ORDER BY ${sortCondition.cloName} ${sortCondition.orderType}
         </if>
     </select>
     <!-- 查询全部数据 -->

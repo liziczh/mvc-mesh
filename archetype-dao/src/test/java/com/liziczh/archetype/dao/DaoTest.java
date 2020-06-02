@@ -1,6 +1,7 @@
 package com.liziczh.archetype.dao;
 
 import java.util.Date;
+import java.util.List;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,6 +15,7 @@ import com.liziczh.archetype.api.common.Constants;
 import com.liziczh.archetype.api.condition.DemoCondition;
 import com.liziczh.archetype.api.entity.TDemo;
 import com.liziczh.archetype.dao.mapper.TDemoMapper;
+import com.liziczh.base.common.condition.SortCondition;
 
 @RunWith(SpringRunner.class)
 @SpringJUnitConfig(classes = DaoApplication.class)
@@ -25,8 +27,11 @@ public class DaoTest {
 	@Test
 	public void selectByConditionTest() {
 		DemoCondition condition = new DemoCondition();
-		condition.setValid(Constants.COMMON_STATUS.VALID.getCode());
-		demoMapper.selectByCondition(condition);
+		SortCondition sortCondition = new SortCondition();
+		sortCondition.setCloName("CREATE_TIME");
+		sortCondition.setOrderType("DESC");
+		condition.setSortCondition(sortCondition);
+		List<TDemo> demoList = demoMapper.selectByCondition(condition);
 	}
 	@Test
 	public void getAllTest() {

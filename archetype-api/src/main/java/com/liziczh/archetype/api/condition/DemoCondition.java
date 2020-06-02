@@ -5,7 +5,9 @@ import java.util.Date;
 import com.liziczh.base.common.condition.BaseCondition;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
 public class DemoCondition extends BaseCondition {
 	private static final long serialVersionUID = -7473402179827602416L;
