@@ -17,6 +17,7 @@
 		<module>archetype-redis</module>
 		<module>archetype-dao</module>
 		<module>archetype-ref</module>
+		<module>archetype-kafka</module>
 		<module>archetype-service</module>
 		<module>archetype-web</module>
 		<module>archetype-mgm</module>
