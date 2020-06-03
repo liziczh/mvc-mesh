@@ -3,7 +3,7 @@ server:
     context-path: /archetype
 spring:
   application:
-    name: archtype-web
+    name: archetype-web
   profiles:
     include: web-${spring.profiles.active},service-${spring.profiles.active},dao-${spring.profiles.active},ref-${spring.profiles.active},redis-${spring.profiles.active}
   jackson:
