@@ -1,3 +1,0 @@
-logging:
-  file:
-    path: logback-spring.xml
