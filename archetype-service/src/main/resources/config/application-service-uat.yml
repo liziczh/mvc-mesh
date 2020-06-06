@@ -1,1 +1,6 @@
-
+mail:
+  host: mail.ikang.com
+  protocol: smtp
+  default-encoding: UTF-8
+  username: test
+  password: 123456
