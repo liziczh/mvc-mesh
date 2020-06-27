@@ -23,11 +23,11 @@ import lombok.extern.slf4j.Slf4j;
 public class KafkaConfig {
 	@Value("${spring.kafka.producer.bootstrap-servers}")
 	private String bootstrapServers;
-	@Value("${spring.kafka.producer.create-topics:#{null}}")
+	@Value("${spring.kafka.consumer.create-topics}")
 	private String createTopics;
-	@Value("${spring.kafka.producer.partition-num:#{null}}")
+	@Value("${spring.kafka.consumer.partition-num:1}")
 	private String partitionNum;
-	@Value("${spring.kafka.producer.replication-factor:#{null}}")
+	@Value("${spring.kafka.consumer.replication-factor:1}")
 	private String replicationFactor;
 
 	@PostConstruct
@@ -47,7 +47,6 @@ public class KafkaConfig {
 		Map<String, Object> configs = new HashMap<>();
 		configs.put(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
 		KafkaAdmin admin = new KafkaAdmin(configs);
-		admin.setFatalIfBrokerNotAvailable(true);
 		return admin;
 	}
 }

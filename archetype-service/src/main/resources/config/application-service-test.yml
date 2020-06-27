@@ -24,4 +24,4 @@ spring:
       value-deserializer: org.apache.kafka.common.serialization.StringSerializer
       create-topics: archetypeTopic
       partition-num: 2
-      replication-factor: 2
+      replication-factor: 1
