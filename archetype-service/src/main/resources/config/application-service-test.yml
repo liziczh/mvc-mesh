@@ -7,7 +7,7 @@ spring:
     password: 123456
   kafka:
     producer:
-      bootstrap-servers: 127.0.0.1:9092
+      bootstrap-servers: 47.93.251.190:9092
       retries: 0
       batch-size: 16384
       buffer-memory: 33554432
@@ -15,7 +15,7 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
     consumer:
-      bootstrap-servers: 127.0.0.1:9092
+      bootstrap-servers: 47.93.251.190:9092
       group-id: archetypeGroup
       auto-offset-reset: earliest
       enable-auto-commit: true
