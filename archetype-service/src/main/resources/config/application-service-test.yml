@@ -22,3 +22,6 @@ spring:
       auto-commit-interval: 100
       key-deserializer: org.apache.kafka.common.serialization.StringSerializer
       value-deserializer: org.apache.kafka.common.serialization.StringSerializer
+      create-topics: archetypeTopic
+      partition-num: 2
+      replication-factor: 2
