@@ -47,6 +47,7 @@ public class KafkaConfig {
 		Map<String, Object> configs = new HashMap<>();
 		configs.put(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
 		KafkaAdmin admin = new KafkaAdmin(configs);
+		admin.setFatalIfBrokerNotAvailable(true);
 		return admin;
 	}
 }
