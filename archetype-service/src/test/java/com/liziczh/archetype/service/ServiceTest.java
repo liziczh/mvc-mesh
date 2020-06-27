@@ -38,8 +38,4 @@ public class ServiceTest {
 			e.printStackTrace();
 		}
 	}
-	@Test
-	public void demoRedisServiceTest() {
-		demoService.setDemoRedisValue("service", "value");
-	}
 }

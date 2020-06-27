@@ -9,7 +9,8 @@ import com.liziczh.base.common.service.BaseService;
 public interface DemoService extends BaseService {
 	/**
 	 * 条件查询
-	 * @return TDemo
+	 * @param condition 查询条件
+	 * @return List<TDemo>
 	 * @throws Exception 异常
 	 */
 	List<TDemo> selectByCondition(DemoCondition condition) throws Exception;
@@ -45,29 +46,6 @@ public interface DemoService extends BaseService {
 	 * @throws Exception 异常
 	 */
 	void deleteDemo(String id) throws Exception;
-	/**
-	 * 缓存
-	 * @param key key
-	 * @param value value
-	 */
-	void setDemoRedisValue(String key, String value);
-	/**
-	 * 查询缓存值
-	 * @param key K
-	 * @return V
-	 */
-	String getDemoRedisValue(String key);
-	/**
-	 * 是否存在key
-	 * @param key key
-	 * @return 是否存在
-	 */
-	Boolean hasDemoKey(String key);
-	/**
-	 * 删除key
-	 * @param key key
-	 */
-	void delDemoKey(String key);
 	/**
 	 * REF测试
 	 * @return helloworld

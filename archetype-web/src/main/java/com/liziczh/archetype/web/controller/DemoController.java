@@ -14,6 +14,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.liziczh.archetype.api.entity.TDemo;
 import com.liziczh.archetype.api.service.DemoService;
+import com.liziczh.archetype.redis.service.DemoRedisService;
 import com.liziczh.base.common.controller.BaseController;
 import com.liziczh.base.common.result.Result;
 import com.liziczh.base.common.result.ResultBuilder;
@@ -27,6 +28,8 @@ import io.swagger.annotations.ApiOperation;
 public class DemoController extends BaseController {
 	@Autowired
 	private DemoService demoService;
+	@Autowired
+	private DemoRedisService demoRedisService;
 
 	@ApiOperation(value = "hello", notes = "测试接口", tags = "v1.0.0")
 	@GetMapping(value = "hello")
@@ -74,7 +77,7 @@ public class DemoController extends BaseController {
 	@ApiOperation(value = "缓存", notes = "缓存", tags = "v1.0.0")
 	@GetMapping(value = "/cache/{key}/{value}")
 	public Result<String> cache(@PathVariable String key, @PathVariable String value) throws Exception {
-		demoService.setDemoRedisValue(key, value);
+		demoRedisService.setValue(key, value);
 		return new ResultBuilder<String>().success();
 	}
 	@ApiOperation(value = "REST引用接口测试", notes = "REST引用接口测试", tags = "v1.0.0")
