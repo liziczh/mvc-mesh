@@ -1,5 +1,8 @@
 package com.liziczh.archetype.redis.common;
 
+/**
+ * @author zhehao.chen
+ */
 public class RedisConstants {
 	public static enum CACHE_KEY {
 		KEY("KEY:", "正常");

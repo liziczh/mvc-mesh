@@ -47,7 +47,7 @@ public class KafkaConfig {
 	}
 	@Bean
 	public KafkaAdmin kafkaAdmin() {
-		Map<String, Object> configs = new HashMap<>();
+		Map<String, Object> configs = new HashMap<>(1);
 		configs.put(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
 		KafkaAdmin admin = new KafkaAdmin(configs);
 		return admin;
