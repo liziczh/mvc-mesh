@@ -18,16 +18,19 @@ import org.springframework.kafka.core.KafkaAdmin;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * @author zhehao.chen
+ */
 @Slf4j
 @Configuration
 public class KafkaConfig {
 	@Value("${spring.kafka.producer.bootstrap-servers}")
 	private String bootstrapServers;
-	@Value("${spring.kafka.consumer.create-topics}")
+	@Value("${spring.kafka.producer.create-topics}")
 	private String createTopics;
-	@Value("${spring.kafka.consumer.partition-num:1}")
+	@Value("${spring.kafka.producer.partition-num:1}")
 	private String partitionNum;
-	@Value("${spring.kafka.consumer.replication-factor:1}")
+	@Value("${spring.kafka.producer.replication-factor:1}")
 	private String replicationFactor;
 
 	@PostConstruct
