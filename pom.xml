@@ -19,6 +19,6 @@
 		<module>archetype-ref</module>
 		<module>archetype-service</module>
 		<module>archetype-web</module>
-		<module>archetype-mgm</module>
+		<module>archetype-admin</module>
 	</modules>
 </project>
