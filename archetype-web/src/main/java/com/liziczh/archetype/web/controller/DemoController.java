@@ -31,12 +31,12 @@ public class DemoController extends BaseController {
 	@Autowired
 	private DemoRedisService demoRedisService;
 
-	@ApiOperation(value = "hello", notes = "测试接口", tags = "v1.0.0")
+	@ApiOperation(value = "hello", notes = "测试接口")
 	@GetMapping(value = "hello")
 	public Result<String> hello() {
 		return new ResultBuilder<String>().complete("HelloWorld");
 	}
-	@ApiOperation(value = "分页查询", notes = "分页查询", tags = "v1.0.0")
+	@ApiOperation(value = "分页查询", notes = "分页查询")
 	@GetMapping(value = "/page/{pageNum}/{pageSize}")
 	public Result<PageInfo<TDemo>> pageDemo(@PathVariable Integer pageNum, @PathVariable Integer pageSize) throws Exception {
 		PageHelper.startPage(pageNum, pageSize);
@@ -44,43 +44,43 @@ public class DemoController extends BaseController {
 		PageInfo<TDemo> pageInfo = new PageInfo<>(demoList);
 		return new ResultBuilder<PageInfo<TDemo>>().complete(pageInfo);
 	}
-	@ApiOperation(value = "查询全部", notes = "查询全部", tags = "v1.0.0")
+	@ApiOperation(value = "查询全部", notes = "查询全部")
 	@GetMapping(value = "/getAll")
 	public Result<List<TDemo>> getAll() throws Exception {
 		List<TDemo> demoList = demoService.getAll();
 		return new ResultBuilder<List<TDemo>>().complete(demoList);
 	}
-	@ApiOperation(value = "新增接口", notes = "新增接口", tags = "v1.0.0")
+	@ApiOperation(value = "新增接口", notes = "新增接口")
 	@PostMapping(value = "add")
 	public Result<String> addDemo(TDemo demo) throws Exception {
 		demoService.addDemo(demo);
 		return new ResultBuilder<String>().success();
 	}
-	@ApiOperation(value = "更新接口", notes = "更新接口", tags = "v1.0.0")
+	@ApiOperation(value = "更新接口", notes = "更新接口")
 	@PutMapping(value = "update")
 	public Result<String> updateDemo(TDemo demo) throws Exception {
 		demoService.updateDemo(demo);
 		return new ResultBuilder<String>().success();
 	}
-	@ApiOperation(value = "获取接口", notes = "获取接口", tags = "v1.0.0")
+	@ApiOperation(value = "获取接口", notes = "获取接口")
 	@GetMapping(value = "/get/{id}")
 	public Result<TDemo> getDemo(@PathVariable String id) throws Exception {
 		TDemo demo = demoService.getDemo(id);
 		return new ResultBuilder<TDemo>().complete(demo);
 	}
-	@ApiOperation(value = "删除接口", notes = "删除接口", tags = "v1.0.0")
+	@ApiOperation(value = "删除接口", notes = "删除接口")
 	@GetMapping(value = "/delete/{id}")
 	public Result<String> deleteDemo(@PathVariable String id) throws Exception {
 		demoService.deleteDemo(id);
 		return new ResultBuilder<String>().success();
 	}
-	@ApiOperation(value = "缓存", notes = "缓存", tags = "v1.0.0")
+	@ApiOperation(value = "缓存", notes = "缓存")
 	@GetMapping(value = "/cache/{key}/{value}")
 	public Result<String> cache(@PathVariable String key, @PathVariable String value) throws Exception {
 		demoRedisService.setValue(key, value);
 		return new ResultBuilder<String>().success();
 	}
-	@ApiOperation(value = "REST引用接口测试", notes = "REST引用接口测试", tags = "v1.0.0")
+	@ApiOperation(value = "REST引用接口测试", notes = "REST引用接口测试")
 	@PostMapping(value = "ref/hello")
 	public Result<String> refHello() {
 		String hello = demoService.refHello();
