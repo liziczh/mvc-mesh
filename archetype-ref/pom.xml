@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.liziczh</groupId>
-		<artifactId>base-parent</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
+		<artifactId>nut-archetype</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.liziczh</groupId>
 	<artifactId>archetype-ref</artifactId>
