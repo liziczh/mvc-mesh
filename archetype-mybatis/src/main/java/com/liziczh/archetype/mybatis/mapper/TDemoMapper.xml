@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.liziczh.archetype.dao.mapper.TDemoMapper">
+<mapper namespace="com.liziczh.archetype.mybatis.mapper.TDemoMapper">
     <resultMap id="TDemoMap" type="com.liziczh.archetype.api.entity.TDemo">
         <id column="ID" jdbcType="INTEGER" property="id" />
         <result column="NAME" property="name" jdbcType="VARCHAR" />
@@ -83,5 +83,5 @@
 		delete from T_DEMO where ID = #{id,jdbcType=BIGINT}
 	</delete>
     <!--MybatisRedis缓存-->
-    <cache type="com.liziczh.archetype.dao.cache.MybatisRedisCache" />
+    <cache type="com.liziczh.archetype.mybatis.cache.MybatisRedisCache" />
 </mapper>

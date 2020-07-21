@@ -110,7 +110,7 @@
 </dependency>
 <dependency>
 	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-dao</artifactId>
+	<artifactId>archetype-mybatis</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 </dependency>
 <dependency>
@@ -174,7 +174,7 @@
 </dependency>
 <dependency>
 	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-dao</artifactId>
+	<artifactId>archetype-mybatis</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 </dependency>
 <dependency>

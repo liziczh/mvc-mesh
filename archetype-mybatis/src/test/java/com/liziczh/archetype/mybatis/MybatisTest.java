@@ -1,4 +1,4 @@
-package com.liziczh.archetype.dao;
+package com.liziczh.archetype.mybatis;
 
 import java.util.Date;
 import java.util.List;
@@ -14,16 +14,17 @@ import org.springframework.test.context.junit4.SpringRunner;
 import com.liziczh.archetype.api.common.Constants;
 import com.liziczh.archetype.api.condition.DemoCondition;
 import com.liziczh.archetype.api.entity.TDemo;
-import com.liziczh.archetype.dao.mapper.TDemoMapper;
+import com.liziczh.archetype.mybatis.mapper.TDemoMapper;
 import com.liziczh.base.common.condition.SortCondition;
 
 @RunWith(SpringRunner.class)
-@SpringJUnitConfig(classes = DaoApplication.class)
+@SpringJUnitConfig(classes = MybatisApplication.class)
 @SpringBootTest
 @ActiveProfiles("test")
-public class DaoTest {
+public class MybatisTest {
 	@Autowired
 	private TDemoMapper demoMapper;
+
 	@Test
 	public void selectByConditionTest() {
 		DemoCondition condition = new DemoCondition();

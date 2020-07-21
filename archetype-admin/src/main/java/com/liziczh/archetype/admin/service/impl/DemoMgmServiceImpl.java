@@ -10,7 +10,7 @@ import com.liziczh.archetype.admin.service.DemoMgmService;
 import com.liziczh.archetype.api.common.Constants;
 import com.liziczh.archetype.api.condition.DemoCondition;
 import com.liziczh.archetype.api.entity.TDemo;
-import com.liziczh.archetype.dao.mapper.TDemoMapper;
+import com.liziczh.archetype.mybatis.mapper.TDemoMapper;
 
 @Service
 public class DemoMgmServiceImpl implements DemoMgmService {

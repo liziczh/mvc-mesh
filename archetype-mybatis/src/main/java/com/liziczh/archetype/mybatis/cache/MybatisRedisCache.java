@@ -1,4 +1,4 @@
-package com.liziczh.archetype.dao.cache;
+package com.liziczh.archetype.mybatis.cache;
 
 import java.util.Map;
 import java.util.concurrent.locks.ReadWriteLock;

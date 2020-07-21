@@ -8,7 +8,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-dao</artifactId>
+	<artifactId>archetype-mybatis</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
 		<!-- jdbc -->

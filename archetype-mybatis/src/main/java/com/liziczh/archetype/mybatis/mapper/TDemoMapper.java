@@ -1,4 +1,4 @@
-package com.liziczh.archetype.dao.mapper;
+package com.liziczh.archetype.mybatis.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;

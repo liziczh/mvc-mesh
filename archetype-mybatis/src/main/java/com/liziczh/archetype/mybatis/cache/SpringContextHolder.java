@@ -1,4 +1,4 @@
-package com.liziczh.archetype.dao.cache;
+package com.liziczh.archetype.mybatis.cache;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
