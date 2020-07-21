@@ -11,7 +11,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringJUnitConfig(classes = SpringDataJpaApplication.class)
 @SpringBootTest
 @ActiveProfiles("test")
-class SpringDataJpaApplicationTest {
+class SpringDataJpaTest {
 	@Test
 	void contextLoads() {
 	}

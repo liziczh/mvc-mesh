@@ -8,7 +8,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-data-jpa</artifactId>
+	<artifactId>archetype-jpa</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
 		<!-- spring-data-jpa -->

@@ -1,10 +1,10 @@
-package com.liziczh.arcehtype.mybatisplus;
+package com.liziczh.archetype.mybatis.plus;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MybatisPlusApplicationTest {
+class MybatisPlusTest {
 	@Test
 	void contextLoads() {
 	}
