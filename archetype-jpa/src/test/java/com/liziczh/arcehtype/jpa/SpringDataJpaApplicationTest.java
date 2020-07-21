@@ -1,4 +1,4 @@
-package com.liziczh.arcehtype.data.jpa;
+package com.liziczh.arcehtype.jpa;
 
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;

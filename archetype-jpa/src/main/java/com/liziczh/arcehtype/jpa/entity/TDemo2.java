@@ -1,6 +1,14 @@
-package com.liziczh.archetype.api.entity;
+package com.liziczh.arcehtype.jpa.entity;
+
+import static javax.persistence.GenerationType.IDENTITY;
 
 import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -11,10 +19,15 @@ import lombok.Data;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
+@Entity
+@Table(name = "T_DEMO")
 public class TDemo2 extends BaseEntity {
 	private static final long serialVersionUID = -3399850105386695874L;
 	@ApiModelProperty(value = "ID")
 	@JsonProperty("id")
+	@Id
+	@GeneratedValue(strategy = IDENTITY)
+	@Column(name = "id", unique = true, nullable = false)
 	private Integer id;
 	@ApiModelProperty(value = "姓名")
 	@JsonProperty("name")

@@ -1,4 +1,4 @@
-package com.liziczh.arcehtype.data.jpa;
+package com.liziczh.arcehtype.jpa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
