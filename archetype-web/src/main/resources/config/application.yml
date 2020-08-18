@@ -12,6 +12,7 @@ spring:
 logging:
   level:
     root: info
+  config: classpath:logback-spring.xml
   file:
     name: /opt/logs/${spring.application.name}/${spring.application.name}.log
 # SpringBootActuator
