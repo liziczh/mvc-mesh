@@ -9,6 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 import sun.misc.BASE64Decoder;
 
 /**
+ * 对称加密解密
  * @author zhehao.chen
  */
 @Slf4j

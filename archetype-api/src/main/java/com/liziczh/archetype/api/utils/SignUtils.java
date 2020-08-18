@@ -10,6 +10,7 @@ import java.util.Map;
 import org.springframework.util.DigestUtils;
 
 /**
+ * 签名生成与校验
  * @author zhehao.chen
  */
 public class SignUtils {
