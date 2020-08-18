@@ -1,4 +1,4 @@
-package com.liziczh.archetype.api.dto;
+package com.liziczh.archetype.api.dto.demo;
 
 import java.io.Serializable;
 
