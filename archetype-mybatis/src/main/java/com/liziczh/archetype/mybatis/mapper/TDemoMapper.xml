@@ -16,10 +16,10 @@
     </sql>
     <!-- 条件查询 -->
     <select id="selectByCondition" parameterType="com.liziczh.archetype.api.condition.DemoCondition" resultType="list" resultMap="TDemoMap">
-        SELECT * FROM T_DEMO
+        select * from t_demo
         <where>
             <if test="name != null">
-                NAME LIKE #{name,jdbcType=VARCHAR},
+                NAME like #{name,jdbcType=VARCHAR},
             </if>
             <if test="startTime != null">
                 CREATE_TIME &gt; #{startTime,jdbcType=TIMESTAMP}
@@ -32,27 +32,27 @@
             </if>
         </where>
         <if test="sortCondition.cloName != null">
-            ORDER BY ${sortCondition.cloName} ${sortCondition.orderType}
+            order by ${sortCondition.cloName} ${sortCondition.orderType}
         </if>
     </select>
     <!-- 查询全部数据 -->
     <select id="getAll" resultType="list" resultMap="TDemoMap">
-        SELECT * FROM T_DEMO
+        select * from t_demo
     </select>
     <!-- 查询数据 By ID -->
     <select id="get" resultMap="TDemoMap" parameterType="int">
-        SELECT * FROM T_DEMO WHERE ID = #{id,jdbcType=DECIMAL}
+        select * from t_demo where ID = #{id,jdbcType=DECIMAL}
     </select>
     <!-- 新增数据 -->
     <insert id="insert" parameterType="com.liziczh.archetype.api.entity.TDemo" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
-		insert into T_DEMO (ID, NAME, CREATE_TIME, CREATE_USER, UPDATE_TIME, UPDATE_USER, PERMIT_ROLE, VALID)
+		insert into t_demo (ID, NAME, CREATE_TIME, CREATE_USER, UPDATE_TIME, UPDATE_USER, PERMIT_ROLE, VALID)
 		values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR},
 		#{createTime,jdbcType=TIMESTAMP}, #{createUser,jdbcType=VARCHAR},#{updateTime,jdbcType=TIMESTAMP},
 		#{updateUser,jdbcType=VARCHAR}, #{permitRole,jdbcType=VARCHAR}, #{valid,jdbcType=VARCHAR})
 	</insert>
     <!-- 更新数据 By ID -->
     <update id="update" parameterType="com.liziczh.archetype.api.entity.TDemo">
-        update T_DEMO
+        update t_demo
         <set>
             <if test="name != null">
                 NAME = #{name,jdbcType=VARCHAR},

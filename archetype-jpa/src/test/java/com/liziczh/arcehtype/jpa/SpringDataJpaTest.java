@@ -28,7 +28,7 @@ class SpringDataJpaTest {
 	@Test
 	public void saveTest() {
 		TDemo2 tDemo2 = new TDemo2();
-		tDemo2.setName("栗子");
+		tDemo2.setName("lizi");
 		tDemo2.setCreateTime(new Date());
 		tDemo2.setCreateUser("zhehao.chen");
 		tDemoRepository.save(tDemo2);
