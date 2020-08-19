@@ -1,4 +1,4 @@
-package com.liziczh.archetype.api.dto.excel;
+package com.liziczh.archetype.admin.dto.excel;
 
 import java.util.Date;
 

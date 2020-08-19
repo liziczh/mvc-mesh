@@ -1,4 +1,4 @@
-package com.liziczh.archetype.api.service;
+package com.liziczh.archetype.admin.service;
 
 import com.liziczh.archetype.api.condition.DemoCondition;
 

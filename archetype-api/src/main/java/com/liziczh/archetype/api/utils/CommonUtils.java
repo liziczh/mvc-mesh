@@ -10,7 +10,7 @@ import org.springframework.util.CollectionUtils;
 /**
  * @author zhehao.chen
  */
-public class CustomUtils {
+public class CommonUtils {
 	/**
 	 * 逗号分隔字符串 to List
 	 * @param str 逗号分隔字符串
