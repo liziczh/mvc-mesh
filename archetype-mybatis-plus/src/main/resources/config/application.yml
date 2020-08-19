@@ -39,6 +39,7 @@ mybatis:
 mybatis-plus:
   global-config:
     db-config:
+      db-type: mysql
       id-type: auto
       field-strategy: not_empty
       #驼峰下划线转换
@@ -46,7 +47,6 @@ mybatis-plus:
       #逻辑删除配置
       logic-delete-value: 0
       logic-not-delete-value: 1
-      db-type: mysql
     refresh: false
   configuration:
     map-underscore-to-camel-case: true
