@@ -28,9 +28,7 @@ public class MybatisTest {
 	@Test
 	public void selectByConditionTest() {
 		DemoCondition condition = new DemoCondition();
-		SortCondition sortCondition = new SortCondition();
-		sortCondition.setCloName("CREATE_TIME");
-		sortCondition.setOrderType("DESC");
+		SortCondition sortCondition = new SortCondition("CREATE_TIME", SortCondition.ORDER.DESC.getCode());
 		condition.setSortCondition(sortCondition);
 		List<TDemo> demoList = demoMapper.selectByCondition(condition);
 	}
