@@ -15,9 +15,7 @@
 	<modules>
 		<module>archetype-api</module>
 		<module>archetype-redis</module>
-		<module>archetype-mybatis</module>
 		<module>archetype-mybatis-plus</module>
-		<module>archetype-jpa</module>
 		<module>archetype-ref</module>
 		<module>archetype-service</module>
 		<module>archetype-web</module>
