@@ -13,12 +13,12 @@ import org.springframework.stereotype.Service;
 import com.alibaba.excel.EasyExcelFactory;
 import com.alibaba.excel.ExcelWriter;
 import com.alibaba.excel.write.metadata.WriteSheet;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.liziczh.archetype.admin.dto.excel.DemoModel;
 import com.liziczh.archetype.admin.service.ExcelService;
 import com.liziczh.archetype.api.condition.DemoCondition;
 import com.liziczh.archetype.api.entity.TDemo;
-import com.liziczh.archetype.mybatis.mapper.TDemoMapper;
-import com.liziczh.base.common.condition.SortCondition;
+import com.liziczh.archetype.mybatisplus.mapper.TDemoMapper;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -62,9 +62,9 @@ public class ExcelServiceImpl implements ExcelService {
 	 */
 	private List<DemoModel> data(DemoCondition condition) {
 		// 条件查询订单
-		SortCondition sortCondition = new SortCondition("CREATE_DATE", SortCondition.ORDER.DESC.getCode());
-		condition.setSortCondition(sortCondition);
-		List<TDemo> demoList = tDemoMapper.selectByCondition(condition);
+		QueryWrapper<TDemo> queryWrapper = new QueryWrapper<>();
+		queryWrapper.orderByDesc("CREATE_DATE");
+		List<TDemo> demoList = tDemoMapper.selectList(queryWrapper);
 		List<DemoModel> modelList = new ArrayList<>();
 		demoList.parallelStream().forEach(demo -> {
 			DemoModel model = new DemoModel();
