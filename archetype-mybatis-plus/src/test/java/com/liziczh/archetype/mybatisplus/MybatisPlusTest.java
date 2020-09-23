@@ -1,4 +1,4 @@
-package com.liziczh.archetype.mybatis;
+package com.liziczh.archetype.mybatisplus;
 
 import java.util.Date;
 import java.util.List;
@@ -11,29 +11,34 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.liziczh.archetype.api.common.Constants;
 import com.liziczh.archetype.api.condition.DemoCondition;
 import com.liziczh.archetype.api.entity.TDemo;
-import com.liziczh.archetype.mybatis.mapper.TDemoMapper;
-import com.liziczh.base.common.condition.SortCondition;
+import com.liziczh.archetype.mybatisplus.mapper.TDemoMapper;
+import com.liziczh.base.common.util.JacksonUtils;
 
 @RunWith(SpringRunner.class)
-@SpringJUnitConfig(classes = MybatisApplication.class)
+@SpringJUnitConfig(classes = MybatisPlusApplication.class)
 @SpringBootTest
 @ActiveProfiles("test")
-public class MybatisTest {
+public class MybatisPlusTest {
 	@Autowired
 	private TDemoMapper demoMapper;
 
 	@Test
 	public void selectByConditionTest() {
 		DemoCondition condition = new DemoCondition();
-		SortCondition sortCondition = new SortCondition("CREATE_TIME", SortCondition.ORDER.DESC.getCode());
-		List<TDemo> demoList = demoMapper.selectByCondition(condition);
+		QueryWrapper<TDemo> queryWrapper = new QueryWrapper<>();
+		queryWrapper.lambda().like(TDemo::getName, "");
+		List<TDemo> demoList = demoMapper.selectList(queryWrapper);
+		System.out.println(JacksonUtils.toJSONString(demoList));
 	}
 	@Test
 	public void getAllTest() {
-		demoMapper.getAll();
+		QueryWrapper<TDemo> queryWrapper = new QueryWrapper<>();
+		List<TDemo> demoList = demoMapper.selectList(queryWrapper);
+		System.out.println(JacksonUtils.toJSONString(demoList));
 	}
 	@Test
 	public void insertDemoTest() {
@@ -47,17 +52,18 @@ public class MybatisTest {
 	@Test
 	public void updateDemoTest() {
 		TDemo entity = new TDemo();
+		entity.setId(24);
 		entity.setName("liziczh");
 		entity.setUpdateTime(new Date());
 		entity.setUpdateUser("lizi");
-		demoMapper.update(entity);
+		demoMapper.updateById(entity);
 	}
 	@Test
 	public void getDemoTest() {
-		demoMapper.get(1);
+		demoMapper.selectById(24);
 	}
 	@Test
 	public void delDemoTest() {
-		demoMapper.delete(1);
+		demoMapper.deleteById(1);
 	}
 }

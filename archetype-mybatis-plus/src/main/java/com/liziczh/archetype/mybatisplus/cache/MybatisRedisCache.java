@@ -1,4 +1,4 @@
-package com.liziczh.archetype.mybatis.cache;
+package com.liziczh.archetype.mybatisplus.cache;
 
 import java.util.Map;
 import java.util.concurrent.locks.ReadWriteLock;
@@ -18,7 +18,6 @@ public class MybatisRedisCache implements Cache {
 		}
 		this.cacheId = cacheId;
 	}
-
 	@Override
 	public String getId() {
 		return cacheId;

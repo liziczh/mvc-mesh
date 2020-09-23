@@ -1,4 +1,4 @@
-package com.liziczh.archetype.mybatis.cache;
+package com.liziczh.archetype.mybatisplus.cache;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

@@ -1,4 +1,4 @@
-package com.liziczh.archetype.mybatis.plus;
+package com.liziczh.archetype.mybatisplus;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
