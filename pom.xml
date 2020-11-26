@@ -17,6 +17,7 @@
 		<module>archetype-redis</module>
 		<module>archetype-mybatis-plus</module>
 		<module>archetype-ref</module>
+		<module>archetype-internal</module>
 		<module>archetype-service</module>
 		<module>archetype-web</module>
 		<module>archetype-admin</module>
