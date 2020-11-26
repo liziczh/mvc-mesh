@@ -5,7 +5,7 @@ spring:
   application:
     name: archetype-web
   profiles:
-    include: web-${spring.profiles.active},service-${spring.profiles.active},mybatisplus-${spring.profiles.active},ref-${spring.profiles.active},redis-${spring.profiles.active}
+    include: web-${spring.profiles.active},service-${spring.profiles.active},mybatisplus-${spring.profiles.active},ref-${spring.profiles.active},internal-${spring.profiles.active},redis-${spring.profiles.active}
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
