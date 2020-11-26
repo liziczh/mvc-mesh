@@ -41,7 +41,7 @@ public class ControllerExceptionHandler {
 		Map<String, Object> model = new HashMap<>(2);
 		model.put("code", code == null ? DEFAULT_CODE : code);
 		model.put("message", message == null ? DEFAULT_MESSAGE : message);
-		log.info("app-shield error：{}", JacksonUtils.toJSONString(model));
+		log.info("error：{}", JacksonUtils.toJSONString(model));
 		return model;
 	}
 	/**
