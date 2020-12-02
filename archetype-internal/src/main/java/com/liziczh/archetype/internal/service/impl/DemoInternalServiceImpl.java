@@ -2,7 +2,7 @@ package com.liziczh.archetype.internal.service.impl;
 
 import org.springframework.stereotype.Component;
 
-import com.liziczh.app.shield.internal.service.DemoInternalService;
+import com.liziczh.archetype.internal.service.DemoInternalService;
 
 import lombok.extern.slf4j.Slf4j;
 
