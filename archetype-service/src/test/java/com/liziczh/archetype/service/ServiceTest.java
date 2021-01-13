@@ -11,12 +11,15 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import com.liziczh.archetype.api.common.Constants;
 import com.liziczh.archetype.api.condition.DemoCondition;
 import com.liziczh.archetype.api.service.DemoService;
+import com.liziczh.archetype.internal.InternalApplication;
 import com.liziczh.archetype.mybatisplus.MybatisPlusApplication;
+import com.liziczh.archetype.redis.RedisApplication;
+import com.liziczh.archetype.ref.RefApplication;
 
 import lombok.extern.slf4j.Slf4j;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringJUnitConfig(classes = { MybatisPlusApplication.class, ServiceApplication.class })
+@SpringJUnitConfig(classes = { MybatisPlusApplication.class, RedisApplication.class, RefApplication.class, InternalApplication.class, ServiceApplication.class })
 @SpringBootTest()
 @ActiveProfiles("test")
 @Slf4j

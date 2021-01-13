@@ -16,10 +16,11 @@ import com.liziczh.archetype.api.common.Constants;
 import com.liziczh.archetype.api.condition.DemoCondition;
 import com.liziczh.archetype.api.entity.TDemo;
 import com.liziczh.archetype.mybatisplus.mapper.TDemoMapper;
+import com.liziczh.archetype.redis.RedisApplication;
 import com.liziczh.base.common.util.JacksonUtils;
 
 @RunWith(SpringRunner.class)
-@SpringJUnitConfig(classes = MybatisPlusApplication.class)
+@SpringJUnitConfig(classes = { MybatisPlusApplication.class, RedisApplication.class })
 @SpringBootTest
 @ActiveProfiles("test")
 public class MybatisPlusTest {
