@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.liziczh</groupId>
-		<artifactId>nut-archetype</artifactId>
+		<artifactId>mvc-mesh</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-web</artifactId>
+	<artifactId>mvc-mesh-web</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
 		<!--session-->
@@ -29,7 +29,7 @@
 		<!--biz-->
 		<dependency>
 			<groupId>com.liziczh</groupId>
-			<artifactId>archetype-service</artifactId>
+			<artifactId>mvc-mesh-service</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>

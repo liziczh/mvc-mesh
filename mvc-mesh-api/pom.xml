@@ -4,29 +4,27 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.liziczh</groupId>
-		<artifactId>nut-archetype</artifactId>
+		<artifactId>mvc-mesh</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-admin</artifactId>
+	<artifactId>mvc-mesh-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
 	<dependencies>
-		<!--actuator-->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-		<!--base-->
+		<!--base-common-->
 		<dependency>
 			<groupId>com.liziczh</groupId>
-			<artifactId>base-mvc</artifactId>
+			<artifactId>base-common</artifactId>
 		</dependency>
-		<!--biz-->
+		<!-- mybatis-plus -->
 		<dependency>
-			<groupId>com.liziczh</groupId>
-			<artifactId>archetype-internal</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatis-plus-boot-starter</artifactId>
+		</dependency>
+		<!--easy excel-->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>easyexcel</artifactId>
 		</dependency>
 	</dependencies>
 </project>

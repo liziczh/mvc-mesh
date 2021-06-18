@@ -4,27 +4,33 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.liziczh</groupId>
-		<artifactId>nut-archetype</artifactId>
+		<artifactId>mvc-mesh</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-api</artifactId>
+	<artifactId>mvc-mesh-internal</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
-		<!--base-common-->
+		<!--biz-->
 		<dependency>
 			<groupId>com.liziczh</groupId>
-			<artifactId>base-common</artifactId>
+			<artifactId>mvc-mesh-api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-		<!-- mybatis-plus -->
 		<dependency>
-			<groupId>com.baomidou</groupId>
-			<artifactId>mybatis-plus-boot-starter</artifactId>
+			<groupId>com.liziczh</groupId>
+			<artifactId>mvc-mesh-mybatis-plus</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-		<!--easy excel-->
 		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>easyexcel</artifactId>
+			<groupId>com.liziczh</groupId>
+			<artifactId>mvc-mesh-redis</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.liziczh</groupId>
+			<artifactId>mvc-mesh-ref</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>

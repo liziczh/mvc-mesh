@@ -8,18 +8,18 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 	<groupId>com.liziczh</groupId>
-	<artifactId>nut-archetype</artifactId>
+	<artifactId>mvc-mesh</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<!--module-->
 	<modules>
-		<module>archetype-api</module>
-		<module>archetype-redis</module>
-		<module>archetype-mybatis-plus</module>
-		<module>archetype-ref</module>
-		<module>archetype-internal</module>
-		<module>archetype-service</module>
-		<module>archetype-web</module>
-		<module>archetype-admin</module>
+		<module>mvc-mesh-api</module>
+		<module>mvc-mesh-redis</module>
+		<module>mvc-mesh-mybatis-plus</module>
+		<module>mvc-mesh-ref</module>
+		<module>mvc-mesh-internal</module>
+		<module>mvc-mesh-service</module>
+		<module>mvc-mesh-web</module>
+		<module>mvc-mesh-admin</module>
 	</modules>
 </project>

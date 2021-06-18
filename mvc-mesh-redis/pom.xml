@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.liziczh</groupId>
-		<artifactId>nut-archetype</artifactId>
+		<artifactId>mvc-mesh</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-redis</artifactId>
+	<artifactId>mvc-mesh-redis</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
 		<!--spring-redis-->
@@ -19,7 +19,7 @@
 		<!--biz-->
 		<dependency>
 			<groupId>com.liziczh</groupId>
-			<artifactId>archetype-api</artifactId>
+			<artifactId>mvc-mesh-api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
     </dependencies>

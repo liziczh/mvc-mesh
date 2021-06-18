@@ -1,4 +1,4 @@
-# nut-archetype
+# mvc-mesh
 #### Module
 
 - api
@@ -31,7 +31,7 @@
 <!--biz-->
 <dependency>
 	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-api</artifactId>
+	<artifactId>mvc-mesh-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 </dependency>
 ```
@@ -47,7 +47,7 @@
 <!--biz-->
 <dependency>
 	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-api</artifactId>
+	<artifactId>mvc-mesh-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 </dependency>
 ```
@@ -84,12 +84,12 @@
 <!--biz-->
 <dependency>
 	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-api</artifactId>
+	<artifactId>mvc-mesh-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 </dependency>
 <dependency>
 	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-redis</artifactId>
+	<artifactId>mvc-mesh-redis</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 </dependency>
 ```
@@ -105,22 +105,22 @@
 <!--biz-->
 <dependency>
 	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-api</artifactId>
+	<artifactId>mvc-mesh-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 </dependency>
 <dependency>
 	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-mybatis</artifactId>
+	<artifactId>mvc-mesh-mybatis</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 </dependency>
 <dependency>
 	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-redis</artifactId>
+	<artifactId>mvc-mesh-redis</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 </dependency>
 <dependency>
 	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-ref</artifactId>
+	<artifactId>mvc-mesh-ref</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 </dependency>
 ```
@@ -145,7 +145,7 @@
 <!--biz-->
 <dependency>
 	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-service</artifactId>
+	<artifactId>mvc-mesh-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 </dependency>
 ```
@@ -169,22 +169,22 @@
 <!--biz-->
 <dependency>
 	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-api</artifactId>
+	<artifactId>mvc-mesh-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 </dependency>
 <dependency>
 	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-mybatis</artifactId>
+	<artifactId>mvc-mesh-mybatis</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 </dependency>
 <dependency>
 	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-redis</artifactId>
+	<artifactId>mvc-mesh-redis</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 </dependency>
 <dependency>
 	<groupId>com.liziczh</groupId>
-	<artifactId>archetype-ref</artifactId>
+	<artifactId>mvc-mesh-ref</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 </dependency>
 ```
