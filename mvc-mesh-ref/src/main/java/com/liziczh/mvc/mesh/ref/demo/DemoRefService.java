@@ -1,4 +1,4 @@
-package com.liziczh.mvc.mesh.ref.remote;
+package com.liziczh.mvc.mesh.ref.demo;
 
 public interface DemoRefService {
     /**

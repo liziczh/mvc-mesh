@@ -1,4 +1,4 @@
-package com.liziczh.mvc.mesh.ref.remote.impl;
+package com.liziczh.mvc.mesh.ref.demo.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 import com.liziczh.mvc.mesh.common.util.JsonUtils;
-import com.liziczh.mvc.mesh.ref.remote.DemoRefService;
+import com.liziczh.mvc.mesh.ref.demo.DemoRefService;
 
 import lombok.extern.slf4j.Slf4j;
 

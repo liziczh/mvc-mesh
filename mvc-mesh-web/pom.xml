@@ -13,7 +13,15 @@
         <!-- module -->
         <dependency>
             <groupId>com.liziczh</groupId>
+            <artifactId>mvc-mesh-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.liziczh</groupId>
             <artifactId>mvc-mesh-application</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.liziczh</groupId>
+            <artifactId>mvc-mesh-redis</artifactId>
         </dependency>
 
         <!-- web -->
