@@ -15,12 +15,10 @@
             <groupId>com.liziczh</groupId>
             <artifactId>mvc-mesh-common</artifactId>
         </dependency>
-
-        <!-- spring-redis -->
+        <!-- base -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <groupId>com.liziczh</groupId>
+            <artifactId>base-redis</artifactId>
         </dependency>
-
     </dependencies>
 </project>
