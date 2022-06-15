@@ -26,7 +26,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="mvc-mesh-web" />
-    <orderEntry type="module" module-name="mvc-mesh-redis" />
     <orderEntry type="module" module-name="mvc-mesh-common" />
     <orderEntry type="module" module-name="mvc-mesh-api" />
     <orderEntry type="library" name="Maven: io.springfox:springfox-swagger2:2.9.2" level="project" />
@@ -43,7 +42,9 @@
     <orderEntry type="library" name="Maven: com.github.xiaoymin:swagger-bootstrap-ui:1.9.6" level="project" />
     <orderEntry type="library" name="Maven: org.javassist:javassist:3.25.0-GA" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-aop:2.7.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.3.20" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.9.7" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.36" level="project" />
     <orderEntry type="library" name="Maven: org.mapstruct:mapstruct:1.5.1.Final" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.24" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.12.0" level="project" />
@@ -72,12 +73,14 @@
     <orderEntry type="library" name="Maven: stax:stax-api:1.0.1" level="project" />
     <orderEntry type="library" name="Maven: com.github.virtuald:curvesapi:1.04" level="project" />
     <orderEntry type="library" name="Maven: cglib:cglib:3.1" level="project" />
+    <orderEntry type="library" name="Maven: org.ow2.asm:asm:4.2" level="project" />
     <orderEntry type="library" name="Maven: org.ehcache:ehcache:3.10.0" level="project" />
     <orderEntry type="library" name="Maven: javax.cache:cache-api:1.1.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.glassfish.jaxb:jaxb-runtime:2.3.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.glassfish.jaxb:txw2:2.3.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.sun.istack:istack-commons-runtime:3.0.12" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.sun.activation:jakarta.activation:1.2.2" level="project" />
+    <orderEntry type="module" module-name="mvc-mesh-redis" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-redis:2.7.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-redis:2.7.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-keyvalue:2.7.0" level="project" />
@@ -106,7 +109,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-web:5.3.20" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.3.20" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:5.3.20" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.3.20" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.3.20" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-actuator:2.7.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-actuator-autoconfigure:2.7.0" level="project" />
@@ -135,8 +137,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: com.jayway.jsonpath:json-path:2.7.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:json-smart:2.4.8" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:accessors-smart:2.4.8" level="project" />
-    <orderEntry type="library" name="Maven: org.ow2.asm:asm:9.1" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.36" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.3" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: jakarta.activation:jakarta.activation-api:1.2.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.assertj:assertj-core:3.22.0" level="project" />

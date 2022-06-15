@@ -99,12 +99,17 @@
             </dependency>
             <dependency>
                 <groupId>com.liziczh</groupId>
+                <artifactId>mvc-mesh-web</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.liziczh</groupId>
                 <artifactId>mvc-mesh-application</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.liziczh</groupId>
-                <artifactId>mvc-mesh-web</artifactId>
+                <artifactId>mvc-mesh-service</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>

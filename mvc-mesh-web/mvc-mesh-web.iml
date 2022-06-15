@@ -19,8 +19,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="mvc-mesh-application" />
-    <orderEntry type="module" module-name="mvc-mesh-redis" />
     <orderEntry type="module" module-name="mvc-mesh-common" />
     <orderEntry type="module" module-name="mvc-mesh-api" />
     <orderEntry type="library" name="Maven: io.springfox:springfox-swagger2:2.9.2" level="project" />
@@ -37,6 +35,7 @@
     <orderEntry type="library" name="Maven: com.github.xiaoymin:swagger-bootstrap-ui:1.9.6" level="project" />
     <orderEntry type="library" name="Maven: org.javassist:javassist:3.25.0-GA" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-aop:2.7.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.3.20" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.9.7" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.36" level="project" />
     <orderEntry type="library" name="Maven: org.mapstruct:mapstruct:1.5.1.Final" level="project" />
@@ -74,6 +73,8 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.glassfish.jaxb:txw2:2.3.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.sun.istack:istack-commons-runtime:3.0.12" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.sun.activation:jakarta.activation:1.2.2" level="project" />
+    <orderEntry type="module" module-name="mvc-mesh-application" />
+    <orderEntry type="module" module-name="mvc-mesh-redis" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-redis:2.7.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-redis:2.7.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-keyvalue:2.7.0" level="project" />
@@ -102,7 +103,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-web:5.3.20" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.3.20" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:5.3.20" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.3.20" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.3.20" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.3.20" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-actuator:2.7.0" level="project" />
