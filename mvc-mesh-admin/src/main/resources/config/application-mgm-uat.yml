@@ -1,2 +1,0 @@
-server:
-  port: ${jvm_port:80}

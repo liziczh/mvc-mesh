@@ -1,40 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>com.liziczh</groupId>
-		<artifactId>mvc-mesh</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
-	<groupId>com.liziczh</groupId>
-	<artifactId>mvc-mesh-service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<dependencies>
-		<!--mail-->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-mail</artifactId>
-		</dependency>
-		<!--kafka-->
-		<dependency>
-			<groupId>org.springframework.kafka</groupId>
-			<artifactId>spring-kafka</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.kafka</groupId>
-			<artifactId>kafka-clients</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.kafka</groupId>
-			<artifactId>spring-kafka-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<!--biz-->
-		<dependency>
-			<groupId>com.liziczh</groupId>
-			<artifactId>mvc-mesh-internal</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-	</dependencies>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.liziczh</groupId>
+        <artifactId>mvc-mesh-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>mvc-mesh-service</artifactId>
+
+    <dependencies>
+        <!--module-->
+        <dependency>
+            <groupId>com.liziczh</groupId>
+            <artifactId>mvc-mesh-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.liziczh</groupId>
+            <artifactId>mvc-mesh-dao</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.liziczh</groupId>
+            <artifactId>mvc-mesh-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.liziczh</groupId>
+            <artifactId>mvc-mesh-mq</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.liziczh</groupId>
+            <artifactId>mvc-mesh-ref</artifactId>
+        </dependency>
+    </dependencies>
 </project>

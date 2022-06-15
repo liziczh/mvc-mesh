@@ -1,4 +1,0 @@
-#本文件用于测试环境单元测试#
-spring:
-  profiles:
-    include: web-test,service-test,internal-test,mybatis-test,redis-test,ref-test
