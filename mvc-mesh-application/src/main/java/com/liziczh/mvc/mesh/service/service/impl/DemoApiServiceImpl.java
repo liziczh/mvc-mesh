@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.liziczh.mvc.mesh.api.common.response.BaseResponse;
+import com.liziczh.base.api.common.response.BaseResponse;
 import com.liziczh.mvc.mesh.api.dto.DemoDTO;
 import com.liziczh.mvc.mesh.api.dto.DemoOptDTO;
 import com.liziczh.mvc.mesh.api.req.DemoCommandReq;

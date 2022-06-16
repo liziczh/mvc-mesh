@@ -8,10 +8,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.liziczh.mvc.mesh.api.condition.PageCondition;
-import com.liziczh.mvc.mesh.api.condition.SortCondition;
+import com.liziczh.base.api.condition.PageCondition;
+import com.liziczh.base.api.condition.SortCondition;
+import com.liziczh.base.common.enums.DeletedEnum;
 import com.liziczh.mvc.mesh.api.req.DemoQueryReq;
-import com.liziczh.mvc.mesh.common.enums.DeletedEnum;
 import com.liziczh.mvc.mesh.dao.mapper.TDemoMapper;
 import com.liziczh.mvc.mesh.dao.po.DemoPO;
 import com.liziczh.mvc.mesh.service.bo.DemoBO;

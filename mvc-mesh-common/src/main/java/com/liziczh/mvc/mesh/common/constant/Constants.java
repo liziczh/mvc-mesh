@@ -1,4 +1,4 @@
-package com.liziczh.mvc.mesh.api.constant;
+package com.liziczh.mvc.mesh.common.constant;
 
 public class Constants {
     public static final String SYS_CODE = "archetype";

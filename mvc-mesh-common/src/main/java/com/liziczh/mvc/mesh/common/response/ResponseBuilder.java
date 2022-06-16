@@ -1,6 +1,6 @@
 package com.liziczh.mvc.mesh.common.response;
 
-import com.liziczh.mvc.mesh.api.common.response.BaseResponse;
+import com.liziczh.base.api.common.response.BaseResponse;
 import com.liziczh.mvc.mesh.common.enums.StatusCodeEnum;
 
 import lombok.Data;

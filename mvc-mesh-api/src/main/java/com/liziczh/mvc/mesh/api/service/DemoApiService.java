@@ -2,7 +2,7 @@ package com.liziczh.mvc.mesh.api.service;
 
 import java.util.List;
 
-import com.liziczh.mvc.mesh.api.common.response.BaseResponse;
+import com.liziczh.base.api.common.response.BaseResponse;
 import com.liziczh.mvc.mesh.api.dto.DemoDTO;
 import com.liziczh.mvc.mesh.api.dto.DemoOptDTO;
 import com.liziczh.mvc.mesh.api.req.DemoCommandReq;

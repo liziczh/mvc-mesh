@@ -13,8 +13,8 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
-import com.liziczh.mvc.mesh.common.util.FileUtil;
-import com.liziczh.mvc.mesh.common.util.JsonUtils;
+import com.liziczh.base.common.util.FileUtil;
+import com.liziczh.base.common.util.JsonUtils;
 import com.liziczh.mvc.mesh.ref.mail.dto.MailSendRequest;
 import com.liziczh.mvc.mesh.ref.mail.dto.MailSendResult;
 import com.liziczh.mvc.mesh.ref.mail.service.MailService;

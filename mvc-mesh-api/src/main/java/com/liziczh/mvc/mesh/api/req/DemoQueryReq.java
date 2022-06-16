@@ -1,6 +1,7 @@
 package com.liziczh.mvc.mesh.api.req;
 
-import com.liziczh.mvc.mesh.api.condition.BaseCondition;
+import com.liziczh.base.api.condition.BaseCondition;
+
 import lombok.Data;
 
 /**
