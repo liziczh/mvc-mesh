@@ -14,7 +14,7 @@ import com.liziczh.base.common.enums.DeletedEnum;
 import com.liziczh.mvc.mesh.api.req.DemoQueryReq;
 import com.liziczh.mvc.mesh.dao.mapper.TDemoMapper;
 import com.liziczh.mvc.mesh.dao.po.DemoPO;
-import com.liziczh.mvc.mesh.service.bo.DemoBO;
+import com.liziczh.mvc.mesh.service.bo.info.DemoBO;
 import com.liziczh.mvc.mesh.service.convertor.DemoPOConvertor;
 import com.liziczh.mvc.mesh.service.repository.DemoRepository;
 
@@ -105,10 +105,12 @@ public class DemoRepositoryImpl implements DemoRepository {
 
     @Override
     @Transactional(rollbackFor = Exception.class)
-    public void deleteById(Long id) {
+    public void deleteByDemoId(Long demoId) {
+
+        DemoPO po = DemoPO.builder().demoId(demoId).build();
 
         // delete
-        int delete = demoMapper.deleteById(id);
+        int delete = demoMapper.deleteById(po);
 
         if (delete != 1) {
             throw new RuntimeException("DemoRepositoryImpl.deleteById, error");

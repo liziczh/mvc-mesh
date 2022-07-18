@@ -12,8 +12,8 @@ import com.liziczh.mvc.mesh.api.req.DemoCommandReq;
 import com.liziczh.mvc.mesh.api.req.DemoQueryReq;
 import com.liziczh.mvc.mesh.api.service.DemoApiService;
 import com.liziczh.mvc.mesh.common.response.ResponseBuilder;
-import com.liziczh.mvc.mesh.service.bo.DemoBO;
-import com.liziczh.mvc.mesh.service.bo.DemoOptBO;
+import com.liziczh.mvc.mesh.service.bo.info.DemoBO;
+import com.liziczh.mvc.mesh.service.bo.opt.DemoOptBO;
 import com.liziczh.mvc.mesh.service.convertor.DemoApiConvertor;
 
 import lombok.extern.slf4j.Slf4j;
@@ -31,7 +31,6 @@ public class DemoApiServiceImpl implements DemoApiService {
     @Override
     public BaseResponse<List<DemoDTO>> queryPage(DemoQueryReq req) {
         BaseResponse<List<DemoBO>> response = demoService.queryPage(req);
-
         return ResponseBuilder.success(demoApiConvertor.toDTOList(response.getData()));
     }
 

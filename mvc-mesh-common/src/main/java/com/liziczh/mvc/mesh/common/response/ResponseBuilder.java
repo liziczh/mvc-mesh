@@ -1,7 +1,7 @@
 package com.liziczh.mvc.mesh.common.response;
 
 import com.liziczh.base.api.common.response.BaseResponse;
-import com.liziczh.mvc.mesh.common.enums.StatusCodeEnum;
+import com.liziczh.mvc.mesh.common.enums.ResponseCodeEnum;
 
 import lombok.Data;
 
@@ -14,7 +14,7 @@ import lombok.Data;
  * @date 2021/12/10 11:06 下午
  */
 @Data
-public class ResponseBuilder<T> {
+public class ResponseBuilder {
 
     /**
      * 通用操作成功
@@ -26,8 +26,8 @@ public class ResponseBuilder<T> {
      */
     public static <T> BaseResponse<T> success() {
         return new BaseResponse<T>()
-                .code(StatusCodeEnum.SUCCESS.getCode())
-                .msg(StatusCodeEnum.SUCCESS.getDesc());
+                .code(ResponseCodeEnum.SUCCESS.getCode())
+                .msg(ResponseCodeEnum.SUCCESS.getDesc());
     }
 
     /**
@@ -40,8 +40,8 @@ public class ResponseBuilder<T> {
      */
     public static <T> BaseResponse<T> success(T data) {
         return new BaseResponse<T>()
-                .code(StatusCodeEnum.SUCCESS.getCode())
-                .msg(StatusCodeEnum.SUCCESS.getDesc())
+                .code(ResponseCodeEnum.SUCCESS.getCode())
+                .msg(ResponseCodeEnum.SUCCESS.getDesc())
                 .data(data);
     }
 
@@ -55,8 +55,8 @@ public class ResponseBuilder<T> {
      */
     public static <T> BaseResponse<T> error() {
         return new BaseResponse<T>()
-                .code(StatusCodeEnum.ERROR.getCode())
-                .msg(StatusCodeEnum.ERROR.getDesc());
+                .code(ResponseCodeEnum.ERROR.getCode())
+                .msg(ResponseCodeEnum.ERROR.getDesc());
     }
 
     /**
@@ -67,7 +67,7 @@ public class ResponseBuilder<T> {
      * @author chenzhehao
      * @date 2022/1/16 9:47 下午
      */
-    public static <T> BaseResponse<T> error(StatusCodeEnum codeCodeEnum) {
+    public static <T> BaseResponse<T> error(ResponseCodeEnum codeCodeEnum) {
         return new BaseResponse<T>()
                 .code(codeCodeEnum.getCode())
                 .msg(codeCodeEnum.getDesc());

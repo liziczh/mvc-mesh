@@ -1,4 +1,4 @@
-package com.liziczh.mvc.mesh.service.bo;
+package com.liziczh.mvc.mesh.service.bo.ref;
 
 import lombok.Data;
 
@@ -11,7 +11,7 @@ import lombok.Data;
  * @date 2021/7/18 0:24
  */
 @Data
-public class DemoEventBO {
+public class DemoExternalBO {
 
     private String name;
 

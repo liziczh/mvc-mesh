@@ -5,8 +5,8 @@ import java.util.List;
 import com.liziczh.base.api.common.response.BaseResponse;
 import com.liziczh.mvc.mesh.api.req.DemoCommandReq;
 import com.liziczh.mvc.mesh.api.req.DemoQueryReq;
-import com.liziczh.mvc.mesh.service.bo.DemoBO;
-import com.liziczh.mvc.mesh.service.bo.DemoOptBO;
+import com.liziczh.mvc.mesh.service.bo.info.DemoBO;
+import com.liziczh.mvc.mesh.service.bo.opt.DemoOptBO;
 
 public interface DemoService {
 

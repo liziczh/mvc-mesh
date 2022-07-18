@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.liziczh.mvc.mesh.ref.demo.DemoRefService;
-import com.liziczh.mvc.mesh.service.bo.DemoBO;
-import com.liziczh.mvc.mesh.service.bo.DemoExternalBO;
+import com.liziczh.mvc.mesh.service.bo.info.DemoBO;
+import com.liziczh.mvc.mesh.service.bo.ref.DemoExternalBO;
 import com.liziczh.mvc.mesh.service.ref.DemoRemoteService;
 
 import lombok.extern.slf4j.Slf4j;

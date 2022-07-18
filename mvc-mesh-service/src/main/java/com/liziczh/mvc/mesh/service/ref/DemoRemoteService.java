@@ -1,7 +1,7 @@
 package com.liziczh.mvc.mesh.service.ref;
 
-import com.liziczh.mvc.mesh.service.bo.DemoBO;
-import com.liziczh.mvc.mesh.service.bo.DemoExternalBO;
+import com.liziczh.mvc.mesh.service.bo.info.DemoBO;
+import com.liziczh.mvc.mesh.service.bo.ref.DemoExternalBO;
 
 /**
  * 外部服务调用

@@ -1,6 +1,6 @@
 package com.liziczh.mvc.mesh.service.event;
 
-import com.liziczh.mvc.mesh.service.bo.DemoEventBO;
+import com.liziczh.mvc.mesh.service.bo.event.DemoEventBO;
 
 /**
  * 事件

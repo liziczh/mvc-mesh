@@ -3,7 +3,7 @@ package com.liziczh.mvc.mesh.service.repository;
 import java.util.List;
 
 import com.liziczh.mvc.mesh.api.req.DemoQueryReq;
-import com.liziczh.mvc.mesh.service.bo.DemoBO;
+import com.liziczh.mvc.mesh.service.bo.info.DemoBO;
 
 /**
  * 资源层接口
@@ -37,7 +37,7 @@ public interface DemoRepository {
      * @author chenzhehao
      * @date 2021/7/18 0:35
      */
-    void insert(DemoBO entity);
+    void insert(DemoBO bo);
 
     /**
      * 更新
@@ -45,7 +45,7 @@ public interface DemoRepository {
      * @author chenzhehao
      * @date 2021/7/18 0:36
      */
-    void update(DemoBO entity);
+    void update(DemoBO bo);
 
     /**
      * ID删除
@@ -53,6 +53,6 @@ public interface DemoRepository {
      * @author chenzhehao
      * @date 2021/7/18 0:37
      */
-    void deleteById(Long id);
+    void deleteByDemoId(Long demoId);
 
 }

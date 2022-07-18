@@ -70,11 +70,6 @@
             </dependency>
             <dependency>
                 <groupId>com.liziczh</groupId>
-                <artifactId>mvc-mesh-domain</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.liziczh</groupId>
                 <artifactId>mvc-mesh-dao</artifactId>
                 <version>${project.version}</version>
             </dependency>

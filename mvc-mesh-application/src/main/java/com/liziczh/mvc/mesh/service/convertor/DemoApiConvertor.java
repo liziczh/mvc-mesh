@@ -6,8 +6,8 @@ import org.mapstruct.Mapper;
 
 import com.liziczh.mvc.mesh.api.dto.DemoDTO;
 import com.liziczh.mvc.mesh.api.dto.DemoOptDTO;
-import com.liziczh.mvc.mesh.service.bo.DemoBO;
-import com.liziczh.mvc.mesh.service.bo.DemoOptBO;
+import com.liziczh.mvc.mesh.service.bo.info.DemoBO;
+import com.liziczh.mvc.mesh.service.bo.opt.DemoOptBO;
 
 /**
  * common

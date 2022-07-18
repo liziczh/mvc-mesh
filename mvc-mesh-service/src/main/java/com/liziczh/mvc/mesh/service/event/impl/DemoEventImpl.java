@@ -5,7 +5,7 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
 import com.liziczh.base.common.util.JsonUtils;
-import com.liziczh.mvc.mesh.service.bo.DemoEventBO;
+import com.liziczh.mvc.mesh.service.bo.event.DemoEventBO;
 import com.liziczh.mvc.mesh.service.event.DemoEvent;
 
 /**

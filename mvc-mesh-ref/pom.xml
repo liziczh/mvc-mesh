@@ -18,7 +18,11 @@
         <!-- base -->
         <dependency>
             <groupId>com.liziczh</groupId>
-            <artifactId>base-ref</artifactId>
+            <artifactId>base-rest</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.liziczh</groupId>
+            <artifactId>base-mail</artifactId>
         </dependency>
     </dependencies>
 </project>

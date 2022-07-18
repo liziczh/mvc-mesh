@@ -5,7 +5,7 @@ import java.util.List;
 import org.mapstruct.Mapper;
 
 import com.liziczh.mvc.mesh.dao.po.DemoPO;
-import com.liziczh.mvc.mesh.service.bo.DemoBO;
+import com.liziczh.mvc.mesh.service.bo.info.DemoBO;
 
 /**
  * common

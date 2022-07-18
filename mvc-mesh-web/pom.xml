@@ -20,5 +20,9 @@
             <groupId>com.liziczh</groupId>
             <artifactId>base-web</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.liziczh</groupId>
+            <artifactId>base-swagger</artifactId>
+        </dependency>
     </dependencies>
 </project>

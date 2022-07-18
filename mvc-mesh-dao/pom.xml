@@ -10,7 +10,7 @@
     <artifactId>mvc-mesh-dao</artifactId>
 
     <dependencies>
-        <!--module-->
+        <!-- module -->
         <dependency>
             <groupId>com.liziczh</groupId>
             <artifactId>mvc-mesh-common</artifactId>
@@ -22,7 +22,7 @@
         <!-- base -->
         <dependency>
             <groupId>com.liziczh</groupId>
-            <artifactId>base-dao</artifactId>
+            <artifactId>base-mybatisplus</artifactId>
         </dependency>
     </dependencies>
 </project>

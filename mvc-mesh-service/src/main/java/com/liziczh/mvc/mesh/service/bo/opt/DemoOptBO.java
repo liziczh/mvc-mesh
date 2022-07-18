@@ -1,4 +1,4 @@
-package com.liziczh.mvc.mesh.service.bo;
+package com.liziczh.mvc.mesh.service.bo.opt;
 
 import lombok.Data;
 
