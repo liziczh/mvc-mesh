@@ -16,7 +16,7 @@ import com.liziczh.mvc.mesh.service.bo.info.DemoBO;
  * @date 2022/6/15 7:13 下午
  */
 @Mapper(componentModel = "spring")
-public interface DemoPOConvertor {
+public interface DemoInfoConvertor {
 
     DemoBO toBO(DemoPO po);
 

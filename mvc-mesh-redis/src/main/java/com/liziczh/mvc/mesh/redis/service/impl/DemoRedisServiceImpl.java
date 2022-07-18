@@ -1,15 +1,12 @@
 package com.liziczh.mvc.mesh.redis.service.impl;
 
-import java.util.concurrent.TimeUnit;
-
-import javax.annotation.Resource;
-
+import com.liziczh.mvc.mesh.redis.service.DemoRedisService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
-import com.liziczh.mvc.mesh.redis.service.DemoRedisService;
-
-import lombok.extern.slf4j.Slf4j;
+import javax.annotation.Resource;
+import java.util.concurrent.TimeUnit;
 
 /**
  * DemoRedis服务
@@ -23,17 +20,17 @@ import lombok.extern.slf4j.Slf4j;
 @Service
 public class DemoRedisServiceImpl implements DemoRedisService {
 
-    @Resource(name = "redisStringTemplate")
-    private RedisTemplate<String, String> redisTemplate;
+    @Resource(name = "redisTemplate")
+    private RedisTemplate<String, Object> redisTemplate;
 
     @Override
     public void setValue(String key, String value) {
-        redisTemplate.opsForValue().set(key, value, 1, TimeUnit.HOURS);
+        redisTemplate.opsForValue().set(key, value, 300, TimeUnit.SECONDS);
     }
 
     @Override
     public String getValue(String key) {
-        return redisTemplate.opsForValue().get(key);
+        return String.valueOf(redisTemplate.opsForValue().get(key));
     }
 
     @Override

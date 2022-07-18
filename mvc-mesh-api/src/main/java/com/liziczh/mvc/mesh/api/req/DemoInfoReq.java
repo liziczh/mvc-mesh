@@ -1,10 +1,9 @@
 package com.liziczh.mvc.mesh.api.req;
 
-import com.liziczh.base.api.condition.BaseCondition;
 import lombok.*;
 
 /**
- * 实体查询条件
+ * 实体查询
  *
  * @author chenzhehao
  * @version 1.0
@@ -16,7 +15,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class DemoQueryReq extends BaseCondition {
+public class DemoInfoReq {
     /**
      * 实体ID
      */
@@ -25,12 +24,5 @@ public class DemoQueryReq extends BaseCondition {
      * 用户ID
      */
     private Long userId;
-    /**
-     * 名称
-     */
-    private String name;
-    /**
-     * 状态
-     */
-    private Integer status;
+
 }

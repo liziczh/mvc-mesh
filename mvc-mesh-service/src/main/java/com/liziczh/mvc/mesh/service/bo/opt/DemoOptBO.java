@@ -1,6 +1,6 @@
 package com.liziczh.mvc.mesh.service.bo.opt;
 
-import lombok.Data;
+import lombok.*;
 
 /**
  * DemoOptBO
@@ -11,6 +11,10 @@ import lombok.Data;
  * @date 2022/1/16 12:11 上午
  */
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 public class DemoOptBO {
 
     private Long demoId;

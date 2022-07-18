@@ -1,12 +1,14 @@
 package com.liziczh.mvc.mesh.api.service;
 
-import java.util.List;
-
 import com.liziczh.base.api.common.response.BaseResponse;
 import com.liziczh.mvc.mesh.api.dto.DemoDTO;
 import com.liziczh.mvc.mesh.api.dto.DemoOptDTO;
-import com.liziczh.mvc.mesh.api.req.DemoCommandReq;
+import com.liziczh.mvc.mesh.api.req.DemoAddReq;
+import com.liziczh.mvc.mesh.api.req.DemoInfoReq;
 import com.liziczh.mvc.mesh.api.req.DemoQueryReq;
+import com.liziczh.mvc.mesh.api.req.DemoUpdateReq;
+
+import java.util.List;
 
 public interface DemoApiService {
 
@@ -18,17 +20,17 @@ public interface DemoApiService {
      * @author chenzhehao
      * @date 2022/1/17 12:37 上午
      */
-    BaseResponse<List<DemoDTO>> queryPage(DemoQueryReq req) throws Exception;
+    BaseResponse<List<DemoDTO>> pageQuery(DemoQueryReq req) throws Exception;
 
     /**
      * 查询单个实体信息
      *
-     * @param demoId
+     * @param req
      * @return com.liziczh.mvc.mesh.api.dto.DemoDTO
      * @author chenzhehao
      * @date 2022/1/17 12:41 上午
      */
-    BaseResponse<DemoDTO> getDemo(Long demoId) throws Exception;
+    BaseResponse<DemoDTO> getDemo(DemoInfoReq req) throws Exception;
 
     /**
      * 新增实体
@@ -38,7 +40,7 @@ public interface DemoApiService {
      * @author chenzhehao
      * @date 2022/1/17 12:41 上午
      */
-    BaseResponse<DemoOptDTO> addDemo(DemoCommandReq req) throws Exception;
+    BaseResponse<DemoOptDTO> addDemo(DemoAddReq req) throws Exception;
 
     /**
      * 更新实体
@@ -48,25 +50,16 @@ public interface DemoApiService {
      * @author chenzhehao
      * @date 2022/1/17 12:53 上午
      */
-    BaseResponse<DemoOptDTO> updateDemo(DemoCommandReq demo) throws Exception;
+    BaseResponse<DemoOptDTO> updateDemo(DemoUpdateReq demo) throws Exception;
 
     /**
      * 删除实体
      *
-     * @param demoId
+     * @param id
      * @return com.liziczh.mvc.mesh.api.common.response.BaseResponse<com.liziczh.mvc.mesh.api.dto.DemoDTO>
      * @author chenzhehao
      * @date 2022/1/17 12:53 上午
      */
-    BaseResponse<DemoOptDTO> deleteDemo(Long demoId) throws Exception;
+    BaseResponse<Void> deleteById(Long id) throws Exception;
 
-    /**
-     * 外部服务调用测试
-     *
-     * @param
-     * @return java.lang.String
-     * @author chenzhehao
-     * @date 2022/1/17 12:53 上午
-     */
-    BaseResponse<String> refTest();
 }

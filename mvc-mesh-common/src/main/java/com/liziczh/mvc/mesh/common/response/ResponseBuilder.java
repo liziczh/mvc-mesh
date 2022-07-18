@@ -1,8 +1,7 @@
 package com.liziczh.mvc.mesh.common.response;
 
 import com.liziczh.base.api.common.response.BaseResponse;
-import com.liziczh.mvc.mesh.common.enums.ResponseCodeEnum;
-
+import com.liziczh.mvc.mesh.api.enums.ResponseCodeEnum;
 import lombok.Data;
 
 /**

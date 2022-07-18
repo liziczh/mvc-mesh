@@ -1,7 +1,7 @@
 package com.liziczh.mvc.mesh.service.ref;
 
 import com.liziczh.mvc.mesh.service.bo.info.DemoBO;
-import com.liziczh.mvc.mesh.service.bo.ref.DemoExternalBO;
+import com.liziczh.mvc.mesh.service.bo.ref.DemoRefBO;
 
 /**
  * 外部服务调用
@@ -19,6 +19,6 @@ public interface DemoRemoteService {
      * @author chenzhehao
      * @date 2021/7/18 1:50
      */
-    DemoExternalBO callRemoteService(DemoBO demoBO);
+    DemoRefBO callRemoteService(DemoBO demoBO);
 
 }

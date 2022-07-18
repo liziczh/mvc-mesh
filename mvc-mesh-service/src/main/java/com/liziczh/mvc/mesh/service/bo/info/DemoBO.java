@@ -1,9 +1,6 @@
 package com.liziczh.mvc.mesh.service.bo.info;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import lombok.Data;
+import lombok.*;
 
 import java.util.Date;
 
@@ -16,6 +13,10 @@ import java.util.Date;
  * @date 2021/7/18 0:24
  */
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 public class DemoBO {
 
     /**

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.liziczh.mvc.mesh.ref.demo.DemoRefService;
 import com.liziczh.mvc.mesh.service.bo.info.DemoBO;
-import com.liziczh.mvc.mesh.service.bo.ref.DemoExternalBO;
+import com.liziczh.mvc.mesh.service.bo.ref.DemoRefBO;
 import com.liziczh.mvc.mesh.service.ref.DemoRemoteService;
 
 import lombok.extern.slf4j.Slf4j;
@@ -26,7 +26,7 @@ public class DemoRemoteServiceImpl implements DemoRemoteService {
     private DemoRefService demoRefService;
 
     @Override
-    public DemoExternalBO callRemoteService(DemoBO demoBO) {
+    public DemoRefBO callRemoteService(DemoBO demoBO) {
         return null;
     }
 
