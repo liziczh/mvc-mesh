@@ -3,16 +3,15 @@ package com.liziczh.mvc.mesh.service.service.impl;
 import com.liziczh.base.api.common.response.BaseResponse;
 import com.liziczh.base.common.enums.DeletedEnum;
 import com.liziczh.base.common.exception.BizInfoException;
+import com.liziczh.base.redis.utils.RedisUtils;
 import com.liziczh.mvc.mesh.api.enums.DemoStatusEnum;
 import com.liziczh.mvc.mesh.api.enums.ResponseCodeEnum;
 import com.liziczh.mvc.mesh.api.req.DemoAddReq;
 import com.liziczh.mvc.mesh.api.req.DemoUpdateReq;
 import com.liziczh.mvc.mesh.common.enums.IdEnum;
 import com.liziczh.mvc.mesh.common.response.ResponseBuilder;
-import com.liziczh.mvc.mesh.redis.utils.RedisUtils;
 import com.liziczh.mvc.mesh.service.bo.info.DemoBO;
 import com.liziczh.mvc.mesh.service.bo.opt.DemoOptBO;
-import com.liziczh.mvc.mesh.service.convertor.DemoInfoConvertor;
 import com.liziczh.mvc.mesh.service.repository.DemoQueryRepository;
 import com.liziczh.mvc.mesh.service.repository.DemoTxRepository;
 import com.liziczh.mvc.mesh.service.service.DemoOptService;
@@ -40,9 +39,6 @@ public class DemoOptServiceImpl implements DemoOptService {
 
     @Autowired
     private DemoQueryRepository demoQueryRepository;
-
-    @Autowired
-    private DemoInfoConvertor demoBOConvertor;
 
     @Autowired
     private RedisUtils redisUtils;
