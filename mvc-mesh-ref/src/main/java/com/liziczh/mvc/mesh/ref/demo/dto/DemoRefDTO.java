@@ -1,4 +1,4 @@
-package com.liziczh.mvc.mesh.service.bo.ref;
+package com.liziczh.mvc.mesh.ref.demo.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -19,7 +19,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class DemoRefBO {
+public class DemoRefDTO {
 
     private String result;
 

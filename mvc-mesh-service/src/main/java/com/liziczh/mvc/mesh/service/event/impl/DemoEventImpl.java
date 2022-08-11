@@ -1,11 +1,11 @@
 package com.liziczh.mvc.mesh.service.event.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
-import com.liziczh.base.common.util.JsonUtils;
-import com.liziczh.mvc.mesh.service.bo.event.DemoEventBO;
+import com.liziczh.mvc.mesh.mq.bo.DemoEventDTO;
+import com.liziczh.mvc.mesh.mq.producer.EventSender;
+import com.liziczh.mvc.mesh.service.bo.info.DemoBO;
 import com.liziczh.mvc.mesh.service.event.DemoEvent;
 
 /**
@@ -20,11 +20,10 @@ import com.liziczh.mvc.mesh.service.event.DemoEvent;
 public class DemoEventImpl implements DemoEvent {
 
     @Autowired
-    private KafkaTemplate<String, String> kafkaTemplate;
+    private EventSender eventSender;
 
     @Override
-    public void publishEvent(DemoEventBO eventBO) {
-        String topic = "test_topic";
-        kafkaTemplate.send(topic, JsonUtils.toJson(eventBO));
+    public void publishEvent(DemoBO demoBO) {
+        eventSender.sendMsg(DemoEventDTO.builder().name(demoBO.getName()).build());
     }
 }

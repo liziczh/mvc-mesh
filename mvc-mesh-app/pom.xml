@@ -10,7 +10,7 @@
     <artifactId>mvc-mesh-app</artifactId>
 
     <dependencies>
-        <!--module-->
+        <!-- module -->
         <dependency>
             <groupId>com.liziczh</groupId>
             <artifactId>mvc-mesh-web</artifactId>
@@ -18,6 +18,12 @@
         <dependency>
             <groupId>com.liziczh</groupId>
             <artifactId>mvc-mesh-application</artifactId>
+        </dependency>
+        <!-- test -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

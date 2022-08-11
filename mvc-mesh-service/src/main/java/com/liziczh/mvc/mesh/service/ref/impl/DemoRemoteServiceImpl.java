@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.liziczh.mvc.mesh.ref.demo.DemoRefService;
+import com.liziczh.mvc.mesh.ref.demo.dto.DemoRefDTO;
+import com.liziczh.mvc.mesh.ref.demo.req.DemoRefReq;
 import com.liziczh.mvc.mesh.service.bo.info.DemoBO;
 import com.liziczh.mvc.mesh.service.bo.ref.DemoRefBO;
 import com.liziczh.mvc.mesh.service.ref.DemoRemoteService;
@@ -27,7 +29,8 @@ public class DemoRemoteServiceImpl implements DemoRemoteService {
 
     @Override
     public DemoRefBO callRemoteService(DemoBO demoBO) {
-        return null;
+        DemoRefDTO demoRefDTO = demoRefService.remoteCall(DemoRefReq.builder().name(demoBO.getName()).build());
+        return DemoRefBO.builder().result(demoRefDTO.getResult()).build();
     }
 
 }

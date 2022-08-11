@@ -4,6 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
 
+import com.liziczh.base.common.util.JsonUtils;
+import com.liziczh.mvc.mesh.mq.bo.DemoEventDTO;
+
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -16,20 +19,19 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Slf4j
 @Component
-public class KafkaSender {
+public class EventSender {
     @Autowired
     private KafkaTemplate<String, Object> kafkaTemplate;
 
     /**
      * 发送消息
      *
-     * @param topic
-     * @param msg
+     * @param eventDTO
      * @return void
      * @author chenzhehao
      * @date 2022/1/16 7:00 下午
      */
-    public void sendMsg(String topic, Object msg) {
-        kafkaTemplate.send(topic, msg);
+    public void sendMsg(DemoEventDTO eventDTO) {
+        kafkaTemplate.send("archetype", JsonUtils.toJson(eventDTO));
     }
 }

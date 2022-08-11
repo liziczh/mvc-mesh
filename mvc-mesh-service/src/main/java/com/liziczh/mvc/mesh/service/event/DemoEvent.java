@@ -1,6 +1,6 @@
 package com.liziczh.mvc.mesh.service.event;
 
-import com.liziczh.mvc.mesh.service.bo.event.DemoEventBO;
+import com.liziczh.mvc.mesh.service.bo.info.DemoBO;
 
 /**
  * 事件
@@ -18,6 +18,6 @@ public interface DemoEvent {
      * @author chenzhehao
      * @date 2021/7/18 1:46
      */
-    void publishEvent(DemoEventBO eventBO);
+    void publishEvent(DemoBO demoBO);
 
 }
