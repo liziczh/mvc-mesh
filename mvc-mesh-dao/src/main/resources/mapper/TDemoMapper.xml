@@ -14,5 +14,5 @@
         <result column="desc" property="desc" jdbcType="VARCHAR"/>
     </resultMap>
     <!--MybatisRedis缓存-->
-    <cache type="com.liziczh.base.mybatisplus.cache.MybatisRedisCache"/>
+<!--    <cache type="com.liziczh.base.mybatisplus.cache.MybatisRedisCache"/>-->
 </mapper>

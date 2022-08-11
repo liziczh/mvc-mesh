@@ -13,13 +13,12 @@ spring:
     database: 0
     timeout: 2000
   mail:
-    host: smtp.exmail.qq.com
-    password: Admin12345
-    username: system@liziczh.com
+    host: smtp.qq.com
+    port: 587
+    username: liziczh@qq.com
+    password: 123456
     default-encoding: UTF-8
-    smtp:
-      auth: true
-      timeout: 25000
+    test-connection: false
   kafka:
     init:
       create-topics: archetypeTopic
