@@ -1,5 +1,7 @@
 server:
   port: ${jvm_port:8080}
+  servlet:
+    context-path: /mvcmesh
 
 spring:
   datasource:

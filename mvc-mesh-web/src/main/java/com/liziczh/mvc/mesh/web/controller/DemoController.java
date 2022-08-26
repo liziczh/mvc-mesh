@@ -1,5 +1,17 @@
 package com.liziczh.mvc.mesh.web.controller;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 import com.liziczh.base.api.common.response.BaseResponse;
 import com.liziczh.mvc.mesh.api.dto.DemoDTO;
 import com.liziczh.mvc.mesh.api.dto.DemoOptDTO;
@@ -9,12 +21,9 @@ import com.liziczh.mvc.mesh.api.req.DemoQueryReq;
 import com.liziczh.mvc.mesh.api.req.DemoUpdateReq;
 import com.liziczh.mvc.mesh.api.service.DemoApiService;
 import com.liziczh.mvc.mesh.common.response.ResponseBuilder;
+
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 /**
  * 示例Controller

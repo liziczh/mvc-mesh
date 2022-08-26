@@ -213,42 +213,49 @@
     <logger name="org.springframework" level="INFO"/>
 
     <logger name="com.liziczh" level="INFO" additivity="false">
+        <appender-ref ref="CONSOLE"/>
         <appender-ref ref="BIZ"/>
         <appender-ref ref="WARN"/>
         <appender-ref ref="ERROR"/>
     </logger>
 
     <logger name="com.liziczh.mvc.mesh.app" level="INFO" additivity="false">
+        <appender-ref ref="CONSOLE"/>
         <appender-ref ref="APP"/>
         <appender-ref ref="WARN"/>
         <appender-ref ref="ERROR"/>
     </logger>
 
     <logger name="com.liziczh.mvc.mesh.ref" level="INFO" additivity="false">
+        <appender-ref ref="CONSOLE"/>
         <appender-ref ref="REF"/>
         <appender-ref ref="WARN"/>
         <appender-ref ref="ERROR"/>
     </logger>
 
     <logger name="com.liziczh.mvc.mesh.dao" level="INFO" additivity="false">
+        <appender-ref ref="CONSOLE"/>
         <appender-ref ref="DAO"/>
         <appender-ref ref="WARN"/>
         <appender-ref ref="ERROR"/>
     </logger>
 
     <logger name="com.liziczh.mvc.mesh.dao" level="INFO" additivity="false">
+        <appender-ref ref="CONSOLE"/>
         <appender-ref ref="SQL"/>
         <appender-ref ref="WARN"/>
         <appender-ref ref="ERROR"/>
     </logger>
 
     <logger name="com.liziczh.mvc.mesh.redis" level="INFO" additivity="false">
+        <appender-ref ref="CONSOLE"/>
         <appender-ref ref="REDIS"/>
         <appender-ref ref="WARN"/>
         <appender-ref ref="ERROR"/>
     </logger>
 
     <logger name="com.liziczh.mvc.mesh.mq" level="INFO" additivity="false">
+        <appender-ref ref="CONSOLE"/>
         <appender-ref ref="MQ"/>
         <appender-ref ref="WARN"/>
         <appender-ref ref="ERROR"/>
